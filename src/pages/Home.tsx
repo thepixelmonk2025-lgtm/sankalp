@@ -80,7 +80,7 @@ const Home: React.FC = () => {
             <div className="mt-10 overflow-hidden">
               <div className="animate-marquee py-4">
                 {[...impactStories, ...impactStories].map((story, i) => (
-                  <div key={`${story.id}-${i}`} className="w-[320px] md:w-[450px] mx-4 h-full flex-shrink-0">
+                  <div key={`${story.id}-${i}`} className="w-[280px] sm:w-[320px] md:w-[450px] mx-3 sm:mx-4 h-full flex-shrink-0">
                     <StoryCard story={story} />
                   </div>
                 ))}

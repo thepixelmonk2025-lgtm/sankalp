@@ -49,7 +49,7 @@ const GalleryGrid: React.FC<GalleryGridProps> = ({ images, variant = 'grid' }) =
               <button
                 key={`${img.id}-${index}`}
                 onClick={() => openLightbox(index % images.length)}
-                className="group relative aspect-[4/3] w-[280px] md:w-[360px] mx-3 md:mx-4 overflow-hidden rounded-xl focus-visible:ring-2 focus-visible:ring-[#8B1A1A] focus-visible:outline-none flex-shrink-0"
+                className="group relative aspect-[4/3] w-[260px] sm:w-[280px] md:w-[360px] mx-2 sm:mx-3 md:mx-4 overflow-hidden rounded-xl focus-visible:ring-2 focus-visible:ring-[#8B1A1A] focus-visible:outline-none flex-shrink-0"
                 aria-label={`View photo: ${img.alt[lang]}`}
                 id={`gallery-img-${img.id}-${index}`}
               >
