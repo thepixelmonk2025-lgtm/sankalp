@@ -1,0 +1,120 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "programs": "Programs",
+    "gallery": "Gallery",
+    "donate": "Donate",
+    "volunteer": "Volunteer",
+    "contact": "Contact",
+    "langToggle": "मराठी"
+  },
+  "hero": {
+    "tagline": "Empowering Communities, Transforming Lives",
+    "subTagline": "Sankalp Foundation works with rural and underserved communities to bring education, healthcare, and livelihood opportunities to those who need it most.",
+    "cta_primary": "Donate Now",
+    "cta_secondary": "See Our Work"
+  },
+  "stats": {
+    "heading": "Our Impact in Numbers"
+  },
+  "programs_section": {
+    "heading": "Our Work",
+    "subheading": "Programs that create lasting change in communities across the region.",
+    "readMore": "Learn More"
+  },
+  "stories": {
+    "heading": "Stories of Impact",
+    "subheading": "Real stories of change from the communities we serve."
+  },
+  "cta_banner": {
+    "heading": "Be the Change — Support Sankalp",
+    "subheading": "Every contribution, big or small, helps us reach more families.",
+    "button": "Donate Today"
+  },
+  "about": {
+    "title": "About Sankalp Foundation",
+    "story_heading": "Our Story",
+    "story": "Sankalp Foundation was established with a simple but powerful belief: that every person, regardless of where they are born, deserves access to education, health, and livelihood. We work at the grassroots level, with communities rather than for them.",
+    "mission_heading": "Our Mission",
+    "mission": "To empower underserved communities through sustainable programs in education, health, and livelihood — building a future of dignity and opportunity for all.",
+    "vision_heading": "Our Vision",
+    "vision": "A society where every individual has equal access to opportunity and can live with dignity, health, and hope.",
+    "founder_heading": "Leadership",
+    "registration_heading": "Registration Details",
+    "reg_number": "TODO: Trust/Society Registration Number",
+    "reg_12a": "TODO: 12A Certificate Number",
+    "reg_80g": "TODO: 80G Certificate Number"
+  },
+  "programs": {
+    "title": "Programs & Causes",
+    "subtitle": "We run focused programs across four key areas to create lasting impact."
+  },
+  "gallery": {
+    "title": "Gallery & Events",
+    "subtitle": "Moments from our work in the community."
+  },
+  "donate": {
+    "title": "Donate to Sankalp Foundation",
+    "subtitle": "Your contribution directly supports our programs on the ground.",
+    "bank_heading": "Bank Transfer Details",
+    "account_name": "Sankalp Foundation",
+    "account_no": "TODO: Account Number",
+    "ifsc": "TODO: IFSC Code",
+    "bank_branch": "TODO: Bank & Branch Name",
+    "upi_heading": "Pay via UPI",
+    "upi_id": "TODO: UPI ID (e.g. sankalp@upi)",
+    "upi_note": "Scan the QR code or copy the UPI ID to pay directly.",
+    "form_heading": "Confirm Your Donation",
+    "form_note": "This helps us send you a receipt and tax certificate. We do not process payments online.",
+    "tax_note": "Donations are eligible for 80G tax deduction. A receipt will be issued by the Foundation.",
+    "name": "Full Name",
+    "contact": "Phone / Email",
+    "amount": "Donation Amount (₹)",
+    "message": "Message (optional)",
+    "submit": "Confirm Donation"
+  },
+  "volunteer": {
+    "title": "Volunteer with Us",
+    "subtitle": "Join our team of changemakers. Your time and skills can transform lives.",
+    "why_heading": "Why Volunteer?",
+    "why_text": "Volunteering with Sankalp Foundation means working directly with communities, gaining real-world impact experience, and being part of a passionate, grounded team.",
+    "form_heading": "Express Your Interest",
+    "name": "Full Name",
+    "contact": "Phone / Email",
+    "area": "Area of Interest",
+    "availability": "Availability / Message",
+    "submit": "Submit Interest"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "We'd love to hear from you — reach out for any inquiry.",
+    "address_heading": "Our Address",
+    "address": "TODO: Full address, City, Maharashtra, PIN",
+    "phone": "TODO: +91 XXXXX XXXXX",
+    "email": "TODO: contact@sankalpfoundation.org",
+    "form_heading": "Send Us a Message",
+    "name": "Your Name",
+    "contact_field": "Phone / Email",
+    "message": "Your Message",
+    "submit": "Send Message"
+  },
+  "footer": {
+    "tagline": "Empowering communities, transforming lives.",
+    "quick_links": "Quick Links",
+    "contact": "Contact",
+    "address": "TODO: City, Maharashtra",
+    "phone": "TODO: +91 XXXXX XXXXX",
+    "email": "TODO: contact@sankalpfoundation.org",
+    "reg": "TODO: Reg. No.",
+    "copyright": "© 2024 Sankalp Foundation. All rights reserved.",
+    "privacy": "Privacy Policy"
+  },
+  "whatsapp": {
+    "message": "Hello, I'd like to know more about Sankalp Foundation."
+  },
+  "form": {
+    "success": "Thank you! We'll get back to you shortly.",
+    "error": "Something went wrong. Please try again or contact us directly."
+  }
+}

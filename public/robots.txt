@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# TODO: Update sitemap URL with real domain before launch
+Sitemap: https://sankalpfoundation.org/sitemap.xml
