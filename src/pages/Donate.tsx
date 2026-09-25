@@ -65,12 +65,12 @@ const Donate: React.FC = () => {
             <div className="bg-white border-2 border-[#FBF0F0] rounded-2xl p-8 flex flex-col items-center text-center">
               <h2 className="text-2xl font-bold text-[#1A1A1A] mb-4">{t('donate.upi_heading')}</h2>
               <div className="h-1 w-10 bg-[#D4A017] rounded-full mb-6" />
-              {/* TODO: Replace with real UPI QR code image from client */}
-              <div className="w-40 h-40 bg-[#FBF0F0] rounded-xl flex items-center justify-center mb-4 border-2 border-dashed border-[#8B1A1A]/30">
-                <div className="text-center text-[#8B1A1A]/40">
-                  <Smartphone size={40} className="mx-auto mb-1" aria-hidden="true" />
-                  <p className="text-xs font-medium">TODO: UPI QR<br />Code Image</p>
-                </div>
+              <div className="w-48 h-48 sm:w-56 sm:h-56 rounded-xl overflow-hidden mb-4 border-2 border-gray-100 shadow-md">
+                <img 
+                  src="/images/qr-code.png" 
+                  alt="Sankalp Foundation UPI QR Code" 
+                  className="w-full h-full object-cover"
+                />
               </div>
               <p className="font-bold text-[#8B1A1A] text-lg mb-2">{t('donate.upi_id')}</p>
               <p className="text-[#5A5A5A] text-sm">{t('donate.upi_note')}</p>
@@ -100,14 +100,13 @@ const Donate: React.FC = () => {
             <div className="mt-6 pt-6 border-t border-gray-200 flex flex-col sm:flex-row gap-3 text-sm text-[#5A5A5A]">
               <span>Or reach us directly:</span>
               <a
-                href="mailto:TODO:contact@sankalpfoundation.org"
+                href="mailto:sankalpfoundation2022@gmail.com"
                 className="inline-flex items-center gap-1.5 text-[#8B1A1A] font-medium hover:underline"
               >
                 <Mail size={14} aria-hidden="true" /> Email us
               </a>
-              {/* TODO: Replace with real WhatsApp number */}
               <a
-                href="https://wa.me/919999999999?text=I%20want%20to%20donate%20to%20Sankalp%20Foundation"
+                href="https://wa.me/919702327373?text=I%20want%20to%20donate%20to%20Sankalp%20Foundation"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-1.5 text-[#25D366] font-medium hover:underline"
