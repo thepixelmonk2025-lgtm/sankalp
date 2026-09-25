@@ -1,9 +1,25 @@
+import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import { ArrowRight, ChevronDown } from 'lucide-react';
 
+const heroImages = [
+  '/images/hero/community-empowerment.png',
+  '/images/hero/education-and-future.png',
+  '/images/hero/healthcare-and-community-service.png',
+  '/images/hero/women-empowerment.png',
+];
+
 const Hero = () => {
   const { t } = useTranslation();
+  const [currentImage, setCurrentImage] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentImage((prev) => (prev + 1) % heroImages.length);
+    }, 5000); // Change image every 5 seconds
+    return () => clearInterval(timer);
+  }, []);
 
   return (
     <section
@@ -11,21 +27,24 @@ const Hero = () => {
       aria-label="Hero section"
       id="hero"
     >
-      {/* Background image */}
-      {/* TODO: Replace /images/hero/hero-main.jpg with a real high-quality photo */}
-      <img
-        src="/images/hero/hero-main.jpg"
-        alt="Sankalp Foundation — Community work"
-        className="absolute inset-0 w-full h-full object-cover"
-        loading="eager"
-        onError={(e) => { (e.currentTarget as HTMLImageElement).style.display = 'none'; }}
-      />
+      {/* Background image slider */}
+      {heroImages.map((src, index) => (
+        <img
+          key={src}
+          src={src}
+          alt={`Sankalp Foundation hero ${index + 1}`}
+          className={`absolute inset-0 w-full h-full object-cover object-[75%_center] md:object-center transition-opacity duration-1000 ease-in-out ${
+            index === currentImage ? 'opacity-100' : 'opacity-0'
+          }`}
+          loading={index === 0 ? "eager" : "lazy"}
+        />
+      ))}
 
       {/* Gradient overlay — maroon toned */}
       <div className="absolute inset-0 bg-gradient-to-r from-[#3A0000]/85 via-[#6B1212]/65 to-[#8B1A1A]/40" />
 
       {/* Hero content */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+      <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
         <div className="max-w-2xl">
           {/* Badge */}
           <div
