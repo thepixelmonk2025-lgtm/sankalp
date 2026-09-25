@@ -3,7 +3,7 @@ import { MessageCircle } from 'lucide-react';
 
 const WhatsAppFloat = () => {
   const { t } = useTranslation();
-  const whatsappNumber = '919999999999'; // TODO: replace with real number
+  const whatsappNumber = '919702327373';
   const message = encodeURIComponent(t('whatsapp.message'));
   const href = `https://wa.me/${whatsappNumber}?text=${message}`;
 

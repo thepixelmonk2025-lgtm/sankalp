@@ -12,7 +12,7 @@ const contactFields: FormField[] = [
 
 const Contact = () => {
   const { t } = useTranslation();
-  const whatsappNumber = '919999999999'; // TODO: replace with real number
+  const whatsappNumber = '919702327373';
   const whatsappMsg = encodeURIComponent(t('whatsapp.message'));
 
   return (
