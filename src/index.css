@@ -22,9 +22,13 @@
     font-family: 'Poppins', 'Noto Sans Devanagari', sans-serif;
     color: #1A1A1A;
     scroll-behavior: smooth;
+    overflow-x: hidden;
+    max-width: 100vw;
   }
   body {
     @apply bg-white;
+    overflow-x: hidden;
+    max-width: 100vw;
   }
   h1, h2, h3, h4, h5 {
     font-weight: 700;
