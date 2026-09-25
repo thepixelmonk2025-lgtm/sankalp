@@ -5,6 +5,8 @@ import Hero from '../components/home/Hero';
 import StatsStrip from '../components/home/StatsStrip';
 import ProgramCard from '../components/home/ProgramCard';
 import StoryCard from '../components/home/StoryCard';
+import AwardSection from '../components/home/AwardSection';
+import CampaignSection from '../components/home/CampaignSection';
 import SectionHeading from '../components/shared/SectionHeading';
 import GalleryGrid from '../components/shared/GalleryGrid';
 import { programs } from '../data/programs';
@@ -49,6 +51,9 @@ const Home: React.FC = () => {
           </div>
         </section>
 
+        {/* Active Campaigns */}
+        <CampaignSection />
+
         {/* Recent Updates / Gallery */}
         <section className="py-16 md:py-24 bg-white" id="recent-updates" aria-label="Recent Updates">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -69,6 +74,9 @@ const Home: React.FC = () => {
             </div>
           </div>
         </section>
+
+        {/* Awards Section */}
+        <AwardSection />
 
         {/* Impact Stories */}
         <section className="py-16 md:py-24 bg-[#FBF0F0]" id="stories" aria-label="Impact Stories">
