@@ -1,6 +1,6 @@
 import { Helmet } from 'react-helmet-async';
 import { useTranslation } from 'react-i18next';
-import { Smartphone, Mail, MessageCircle } from 'lucide-react';
+import { Mail, MessageCircle } from 'lucide-react';
 import ContactForm from '../components/shared/ContactForm';
 import type { FormField } from '../components/shared/ContactForm';
 
