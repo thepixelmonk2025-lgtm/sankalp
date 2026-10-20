@@ -5,27 +5,36 @@ import SectionHeading from '../shared/SectionHeading';
 import { mediaArticles } from '../../data/media';
 import type { MediaArticle } from '../../data/media';
 
-const MediaCoverageSection = () => {
+interface MediaCoverageSectionProps {
+  limit?: number;
+  showHeading?: boolean;
+}
+
+const MediaCoverageSection: React.FC<MediaCoverageSectionProps> = ({ limit, showHeading = true }) => {
   const { i18n } = useTranslation();
   const lang = i18n.language as 'en' | 'mr';
   const [selectedArticle, setSelectedArticle] = useState<MediaArticle | null>(null);
+
+  const displayedArticles = limit ? mediaArticles.slice(0, limit) : mediaArticles;
 
   return (
     <section className="py-16 md:py-24 bg-white" id="media-coverage" aria-label="Media & Newspaper Coverage">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        <SectionHeading
-          title={lang === 'en' ? 'Media & News Coverage' : 'वृत्तपत्रांमधील संकल्प'}
-          subtitle={
-            lang === 'en'
-              ? 'Our community impact highlighted across prominent print media and publications'
-              : 'विविध नामांकित वृत्तपत्रांनी दखल घेतलेली संकल्प फाऊंडेशनच्या कार्याची क्षणचित्रे'
-          }
-        />
+        {showHeading && (
+          <SectionHeading
+            title={lang === 'en' ? 'Media & News Coverage' : 'वृत्तपत्रांमधील संकल्प'}
+            subtitle={
+              lang === 'en'
+                ? 'Our community impact highlighted across prominent print media and publications'
+                : 'विविध नामांकित वृत्तपत्रांनी दखल घेतलेली संकल्प फाऊंडेशनच्या कार्याची क्षणचित्रे'
+            }
+          />
+        )}
 
         {/* Newspaper clippings grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
-          {mediaArticles.map((article, index) => (
+          {displayedArticles.map((article, index) => (
             <div
               key={article.id}
               data-aos="fade-up"

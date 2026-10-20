@@ -5,9 +5,195 @@ export interface MediaArticle {
   date: { en: string; mr: string };
   summary: { en: string; mr: string };
   image: string;
+  featured?: boolean;
 }
 
 export const mediaArticles: MediaArticle[] = [
+  {
+    id: 'muktagiri-umbarkhadwa',
+    title: {
+      en: 'Inspiring Initiative by Sankalp Foundation for Students\' Bright Future at Umbarkhadwa',
+      mr: 'विद्यार्थ्यांच्या उज्ज्वल भविष्यासाठी संकल्प फाऊंडेशनचा प्रेरणादायी उपक्रम — उंबरखडवा शाळेत स्पोर्ट्स कपडे, पाणी फिल्टर व श्रीमद्भगवद्गीता वाटप',
+    },
+    newspaper: {
+      en: 'Dainik Muktagiri',
+      mr: 'दैनिक मुक्तागिरी',
+    },
+    date: {
+      en: 'Feb 25, 2026',
+      mr: '२४-२५ फेब्रुवारी २०२६',
+    },
+    summary: {
+      en: 'Sports uniforms, drinking water filter machines, and Shrimad Bhagavad Gita copies presented to Z.P. Primary School students at Umbarkhadwa (Sakri, Dhule) under President Praveen Jadhav\'s leadership.',
+      mr: 'धुळे जिल्ह्यातील साक्री तालुक्यातील जि. प. प्राथ. शाळा उंबरखडवा येथे अध्यक्ष प्रवीण जाधव यांच्या नेतृत्वाखाली विद्यार्थ्यांना क्रीडा कपडे, शुद्ध पिण्याच्या पाण्यासाठी फिल्टर मशीन आणि श्रीमद्भगवद्गीता ग्रंथांचे वाटप करण्यात आले.',
+    },
+    image: '/images/media/muktagiri-umbarkhadwa-sports-filter.jpeg',
+    featured: true,
+  },
+  {
+    id: 'muktagiri-rajyastariya-sanman',
+    title: {
+      en: 'State-Level Honour for Sankalp Foundation: Recognition for Social Commitment at Spandan Foundation Gala',
+      mr: 'संकल्प फाऊंडेशनला राज्यस्तरीय सन्मान; सामाजिक कार्याची दखल — स्पंदन फाऊंडेशनतर्फे ज्ञानज्योती सावित्रीबाई फुले स्मारकात गौरव',
+    },
+    newspaper: {
+      en: 'Dainik Muktagiri (Satara)',
+      mr: 'दैनिक मुक्तागिरी (सातारा)',
+    },
+    date: {
+      en: 'Apr 3, 2026',
+      mr: '३ एप्रिल २०२६',
+    },
+    summary: {
+      en: 'Sankalp Foundation honored with the prestigious State-Level Award 2026 in Pune at Savitribai Phule Memorial for grassroots education, awareness, and relief initiatives across Maharashtra.',
+      mr: 'पुणे येथील ज्ञानज्योती सावित्रीबाई फुले स्मारक येथे स्पंदन फाऊंडेशन महाराष्ट्र राज्यतर्फे आयोजित राज्यस्तरीय पुरस्कार सोहळा २०२६ मध्ये संकल्प फाऊंडेशन, मुंबई यांना मानाचा राज्यस्तरीय पुरस्कार प्रदान करण्यात आला.',
+    },
+    image: '/images/media/muktagiri-rajyastariya-sanman.jpeg',
+    featured: true,
+  },
+  {
+    id: 'punyanagari-rajyastariya-sanman',
+    title: {
+      en: 'State-Level Award Conferral to Sankalp Foundation at Pune',
+      mr: 'संकल्प फाऊंडेशनला राज्यस्तरीय सन्मान — सामाजिक कार्याची दखल',
+    },
+    newspaper: {
+      en: 'Dainik Punyanagari (Satara Edition)',
+      mr: 'दैनिक पुण्यनगरी (सातारा आवृत्ती)',
+    },
+    date: {
+      en: 'Apr 3, 2026',
+      mr: '३ एप्रिल २०२६',
+    },
+    summary: {
+      en: 'Publicity Head Kiran Jambhale, along with Sagar Kadam, Sarvesh Dhumal, Swaroop Satpute, and Dheeraj Wadkar received the state honor presented by Vidyaniketan\'s Shashikant Kochale and Sagar Sabale.',
+      mr: 'पुणे येथे आयोजित सोहळ्यात संस्थेचे प्रसिद्धी प्रमुख किरण जांभळे, सदस्य सागर कदम, सर्वेश धुमाळ, स्वरूप सातपुते आणि धीरज वाडकर यांनी मानाचा पुरस्कार स्वीकारला.',
+    },
+    image: '/images/media/punyanagari-rajyastariya-sanman.jpeg',
+  },
+  {
+    id: 'muktagiri-700-shetkari-khola',
+    title: {
+      en: 'Commendable Farmer Welfare Initiative: Free Waterproof Khoḷe Provided to 700 Farmers',
+      mr: 'संकल्प फाऊंडेशनचा शेतकरी हिताचा स्तुत्य उपक्रम — ७०० शेतकऱ्यांना पावसाळी कागदी खोळांचे मोफत वाटप',
+    },
+    newspaper: {
+      en: 'Dainik Muktagiri',
+      mr: 'दैनिक मुक्तागिरी',
+    },
+    date: {
+      en: 'Jul 14, 2026',
+      mr: '१३-१४ जुलै २०२६',
+    },
+    summary: {
+      en: 'Essential monsoon waterproof shields distributed to nearly 700 hardworking paddy farmers across 8 remote villages including Aalavadi, Pateghar, Navali, Venekhol, Savali, Wadgaon, Lumnekhol, and Kelavali.',
+      mr: 'भात लागवडीसाठी उपयुक्त ठरणारी कागदी खोळी आलवडी, पाटेघर, नावली, वेणेखोल, सावली, वडगाव, लूमणेखोल व केळवली या ८ गावांतील तब्बल ७०० शेतकरी बांधवांना मोफत वितरित.',
+    },
+    image: '/images/media/muktagiri-700-shetkari-khola.jpeg',
+    featured: true,
+  },
+  {
+    id: 'punyanagari-shetkari-kholan-vatap',
+    title: {
+      en: 'Free Waterproof Rain Khoḷe Distributed to Farmers in Bhondwade Region',
+      mr: 'संकल्प फाऊंडेशनतर्फे पावसाळी कागदी खोळांचे वाटप — ८ गावांतील शेतकऱ्यांना मोठा दिलासा',
+    },
+    newspaper: {
+      en: 'Dainik Punyanagari (Satara Edition)',
+      mr: 'दैनिक पुण्यनगरी (सातारा)',
+    },
+    date: {
+      en: 'Jul 14, 2026',
+      mr: '१४ जुलै २०२६',
+    },
+    summary: {
+      en: 'Sankalp Foundation\'s outreach "Shethkaryanchya Sevesathi... Sankalp Samajhitacha" reached remote farming communities with vital rainy season protection.',
+      mr: 'शेतकऱ्यांच्या सेवेसाठी संकल्प समाजहिताचा या ब्रीदवाक्यानुसार ग्रामीण भागातील शेतकऱ्यांना प्रत्यक्ष दिलासा देणारा स्तुत्य उपक्रम.',
+    },
+    image: '/images/media/punyanagari-shetkari-kholan-vatap.jpeg',
+  },
+  {
+    id: 'aawaj-shikshakancha-aamli',
+    title: {
+      en: 'Grand Distribution of Educational Materials and School Bags at Aamli',
+      mr: 'संकल्प फाऊंडेशनतर्फे आमळी येथे शैक्षणिक साहित्य वितरण उत्साहात',
+    },
+    newspaper: {
+      en: 'Aawaj Shikshakancha (Daily News)',
+      mr: 'आवाज शिक्षकांचा (डेली न्यूज)',
+    },
+    date: {
+      en: 'Special Feature',
+      mr: 'विशेष प्रसिद्धी',
+    },
+    summary: {
+      en: 'Grand educational event held at Kanhaiyalal Maharaj Mandir Hall, Aamli (Sakri, Dhule); students of Umbarkhadwa, Chaupale, and Jambhalipada provided full school kits in the presence of respected leaders.',
+      mr: 'तीर्थक्षेत्र श्री कन्हैयालाल महाराज मंदिर हॉल, आमळी (साक्री) येथे जि. प. शाळा उंबरखडवा, चौपाळे आणि जांभाळीपाडा या ३ शाळांमधील विद्यार्थ्यांना शालेय साहित्य व स्कूल बॅगचे उत्साहात वाटप.',
+    },
+    image: '/images/media/aawaj-shikshakancha-aamli-shaikshanik.jpeg',
+    featured: true,
+  },
+  {
+    id: 'muktagiri-sweater-khola-duheri-upakram',
+    title: {
+      en: 'Dual Humanitarian Initiative: Warm Sweaters for Students & Waterproof Khoḷe for Farmers at Ekeev Z.P. School',
+      mr: 'संकल्प फाऊंडेशनचा दुहेरी सामाजिक उपक्रम — विद्यार्थ्यांना स्वेटर, शेतकऱ्यांना पावसाळी कागदी खोळांचे मोफत वाटप',
+    },
+    newspaper: {
+      en: 'Dainik Muktagiri',
+      mr: 'दैनिक मुक्तागिरी',
+    },
+    date: {
+      en: 'Jul 17, 2026',
+      mr: '१६-१७ जुलै २०२६',
+    },
+    summary: {
+      en: 'At Ekeev Z.P. Primary School, students received warm winter sweaters and local farmers received waterproof field shields, organized in the presence of Samanway Yuva Manch President Ajitdada Jadhav and dignitaries.',
+      mr: 'जि. प. प्राथमिक शाळा, एकीव येथे थंडीपासून संरक्षणासाठी विद्यार्थ्यांना स्वेटर व शेतकऱ्यांना पावसाळी कागदी खोळांचे वाटप. समन्वय युवा मंच अध्यक्ष अजितदादा जाधव व मान्यवरांची विशेष उपस्थिती.',
+    },
+    image: '/images/media/muktagiri-sweater-khola-duheri-upakram.jpeg',
+  },
+  {
+    id: 'muktagiri-vaduth-daptar-vatap',
+    title: {
+      en: 'Walking with Students on the Path of Education: School Bag Distribution at Vaduth High School & Junior College',
+      mr: 'शिक्षणाच्या वाटेवर संकल्पाची साथ! — वडूथ येथे गरजू विद्यार्थ्यांना दप्तर वाटप, विद्यार्थ्यांच्या चेहऱ्यावर फुलले आनंदाचे हास्य',
+    },
+    newspaper: {
+      en: 'Dainik Muktagiri',
+      mr: 'दैनिक मुक्तागिरी',
+    },
+    date: {
+      en: 'Oct 9, 2026',
+      mr: '८-९ ऑक्टोबर २०२६',
+    },
+    summary: {
+      en: 'Rayat Shikshan Sanstha\'s English School & Jr. College Vaduth students received school bags and study aids in the presence of mentor Ajitdada Jadhav, promoting education without barriers.',
+      mr: 'रयत शिक्षण संस्थेच्या इंग्लिश स्कूल अँड ज्युनिअर कॉलेज वडूथ येथील गरजू विद्यार्थ्यांना दप्तर वाटप व निराधार मुलींच्या शैक्षणिक हॉस्टेलला मोलाचे सहकार्य करण्यात आले.',
+    },
+    image: '/images/media/muktagiri-vaduth-daptar-vatap.jpeg',
+    featured: true,
+  },
+  {
+    id: 'punyanagari-chandak-wai',
+    title: {
+      en: 'Educational Supplies & School Bags Distributed at Chandak Wai Z.P. School',
+      mr: 'संकल्प फाऊंडेशनचे शाळेत शैक्षणिक साहित्याचे वाटप — चांदक वाई जि. प. शाळेत उत्साहात उपक्रम',
+    },
+    newspaper: {
+      en: 'Dainik Punyanagari (Satara Edition)',
+      mr: 'दैनिक पुण्यनगरी (सातारा आवृत्ती)',
+    },
+    date: {
+      en: 'Jan 6, 2026',
+      mr: '६ जानेवारी २०२६',
+    },
+    summary: {
+      en: 'Zilla Parishad Primary School Chandak (Wai taluka) hosted Sankalp Foundation for comprehensive school kit and backpack distribution to underprivileged children.',
+      mr: 'चांदक वाई (ता. वाई) जिल्हा परिषद प्राथमिक शाळेत गोरगरीब व सामान्य कुटुंबातील विद्यार्थ्यांना शिक्षणाच्या प्रवाहात अधिक बळ मिळावे म्हणून शैक्षणिक साहित्य व दप्तर वाटप.',
+    },
+    image: '/images/media/punyanagari-chandak-wai-shaikshanik.jpeg',
+  },
   {
     id: 'samajratna-puraskar',
     title: {
