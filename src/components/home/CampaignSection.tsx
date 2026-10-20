@@ -5,6 +5,22 @@ import SectionHeading from '../shared/SectionHeading';
 
 const campaigns = [
   {
+    id: 'annachhatra',
+    titleEn: 'Annachhatra Food Support Campaign',
+    titleMr: 'अन्नछत्र कार्यक्रम (अन्नदान म्हणजे जीवनदान)',
+    descEn: 'Providing daily meal support and nutritional sustenance to needy individuals and the elderly at Sai Tapovan Ashram, Asole, Murbad.',
+    descMr: 'साई तपोवन आश्रम, असोळे, मुरबाड येथे गरजू, वृद्ध व निराधार व्यक्तींसाठी दैनिक भोजन सेवा आणि अन्नदान उपक्रम.',
+    image: '/images/campaigns/annachhatra-food-support.png',
+  },
+  {
+    id: 'mahila-sakshamikaran',
+    titleEn: 'Women Empowerment Initiative (Sewing Machines)',
+    titleMr: 'महिला सक्षमीकरण योजना',
+    descEn: 'Empowering underprivileged rural women with skill development and sewing machines to foster self-reliance and sustainable family livelihoods.',
+    descMr: 'ग्रामीण भागातील गरजू महिलांना शिलाई मशीन व कौशल्य प्रशिक्षण देऊन स्वावलंबी आणि आत्मनिर्भर बनवण्यासाठी आमची विशेष मोहीम.',
+    image: '/images/campaigns/mahila-sakshamikaran.png',
+  },
+  {
     id: 'school-kit',
     titleEn: 'School Kit Donation Drive',
     titleMr: 'शालेय साहित्य वाटप मोहीम',

@@ -77,12 +77,17 @@ const Donate: React.FC = () => {
             </div>
           </div>
 
-          {/* Tax note */}
+          {/* 80G Tax Exemption Highlight Note */}
           <div
-            className="bg-[#8B1A1A]/5 border border-[#8B1A1A]/20 rounded-xl p-4 mb-12 text-center"
+            className="bg-gradient-to-r from-[#FFF8E7] via-[#FFF3D6] to-[#FFF8E7] border-2 border-[#D4A017] rounded-2xl p-6 sm:p-8 mb-14 shadow-md text-center max-w-4xl mx-auto"
             data-aos="fade-up"
           >
-            <p className="text-[#8B1A1A] text-sm font-medium">{t('donate.tax_note')}</p>
+            <div className="inline-block px-3.5 py-1 rounded-full bg-[#8B1A1A] text-white text-xs font-bold uppercase tracking-wider mb-3 shadow-sm">
+              कर सवलत / 80G Tax Benefit
+            </div>
+            <p className="text-[#8B1A1A] text-base sm:text-lg md:text-xl font-bold leading-relaxed max-w-3xl mx-auto">
+              "{t('donate.tax_note')}"
+            </p>
           </div>
 
           {/* Confirmation form */}

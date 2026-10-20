@@ -1,6 +1,6 @@
 import { Helmet } from 'react-helmet-async';
 import { useTranslation } from 'react-i18next';
-import { MapPin, Phone, Mail, MessageCircle, Map } from 'lucide-react';
+import { MapPin, Phone, Mail, MessageCircle } from 'lucide-react';
 import ContactForm from '../components/shared/ContactForm';
 import type { FormField } from '../components/shared/ContactForm';
 
@@ -85,20 +85,6 @@ const Contact = () => {
                   </a>
                 </div>
               </address>
-
-              {/* Google Maps embed placeholder */}
-              {/* TODO: Replace with real Google Maps iframe for the Foundation's address */}
-              <div className="rounded-2xl overflow-hidden border border-gray-200 h-64 bg-[#FBF0F0] flex items-center justify-center">
-                <div className="text-center text-[#8B1A1A]/40">
-                  <Map size={48} className="mx-auto mb-2" aria-hidden="true" />
-                  <p className="text-sm font-medium">
-                    TODO: Embed Google Maps iframe here
-                  </p>
-                  <p className="text-xs opacity-60 mt-1">
-                    Replace this div with a Google Maps &lt;iframe&gt;
-                  </p>
-                </div>
-              </div>
             </div>
 
             {/* Contact form */}

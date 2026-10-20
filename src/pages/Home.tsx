@@ -7,6 +7,7 @@ import ProgramCard from '../components/home/ProgramCard';
 import StoryCard from '../components/home/StoryCard';
 import AwardSection from '../components/home/AwardSection';
 import CampaignSection from '../components/home/CampaignSection';
+import MediaCoverageSection from '../components/home/MediaCoverageSection';
 import SectionHeading from '../components/shared/SectionHeading';
 import GalleryGrid from '../components/shared/GalleryGrid';
 import { programs } from '../data/programs';
@@ -77,6 +78,9 @@ const Home: React.FC = () => {
 
         {/* Awards Section */}
         <AwardSection />
+
+        {/* Newspaper / Media Coverage Section */}
+        <MediaCoverageSection />
 
         {/* Impact Stories */}
         <section className="py-16 md:py-24 bg-[#FBF0F0]" id="stories" aria-label="Impact Stories">

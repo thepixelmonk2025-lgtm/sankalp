@@ -41,7 +41,43 @@ const ContactForm: React.FC<ContactFormProps> = ({
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    // Validate required fields
+    const missing = fields.filter((f) => f.required && !values[f.name]?.trim());
+    if (missing.length > 0) {
+      setStatus('error');
+      return;
+    }
+
     setStatus('loading');
+
+    // If Formspree endpoint is still placeholder, gracefully forward details to WhatsApp
+    if (!formspreeEndpoint || formspreeEndpoint.includes('REPLACE_WITH_REAL_FORM_ID')) {
+      const formTitle =
+        formId === 'donate-form'
+          ? 'देणगी नोंदणी (Donation Confirmation)'
+          : formId === 'volunteer-form'
+          ? 'स्वयंसेवक अर्ज (Volunteer Application)'
+          : 'चौकशी / संपर्क (Contact Inquiry)';
+
+      const details = fields
+        .map((f) => {
+          const val = values[f.name];
+          if (!val) return null;
+          const label = t(f.labelKey);
+          return `• *${label}*: ${val}`;
+        })
+        .filter(Boolean)
+        .join('\n');
+
+      const waMsg = encodeURIComponent(
+        `नमस्कार Sankalp Foundation,\n\nमी वेबसाईटवरून *${formTitle}* फॉर्म भरला आहे.\n\nमाझे तपशील:\n${details}\n\nकृपया संपर्क साधावा. धन्यवाद!`
+      );
+      window.open(`https://wa.me/919702327373?text=${waMsg}`, '_blank');
+      setStatus('success');
+      setValues({});
+      return;
+    }
+
     try {
       const res = await fetch(formspreeEndpoint, {
         method: 'POST',
@@ -73,7 +109,7 @@ const ContactForm: React.FC<ContactFormProps> = ({
   }
 
   return (
-    <form onSubmit={handleSubmit} id={formId} noValidate className="space-y-5">
+    <form onSubmit={handleSubmit} id={formId} className="space-y-5">
       {fields.map((field) => {
         const label = t(field.labelKey);
         const inputId = `${formId}-${field.name}`;
