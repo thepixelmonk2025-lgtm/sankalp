@@ -15,35 +15,35 @@ const MentorSection = () => {
   ];
 
   return (
-    <section className="py-16 md:py-24 bg-gradient-to-b from-[#FFF7F7] via-white to-[#FFF5F5]" aria-label="Inspiration and Mentor">
+    <section className="py-10 sm:py-16 md:py-24 bg-gradient-to-b from-[#FFF7F7] via-white to-[#FFF5F5]" aria-label="Inspiration and Mentor">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Top badge */}
-        <div className="text-center max-w-3xl mx-auto mb-12" data-aos="fade-up">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#8B1A1A]/10 text-[#8B1A1A] font-semibold text-sm mb-3">
-            <Sparkles size={16} className="text-[#D4A017]" />
-            {lang === 'en' ? 'Our Guiding Light & Inspiration' : 'आमचे प्रेरणास्थान व मार्गदर्शक'}
+        <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-12" data-aos="fade-up">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#8B1A1A]/10 text-[#8B1A1A] font-semibold text-xs sm:text-sm mb-3">
+            <Sparkles size={16} className="text-[#D4A017] shrink-0" />
+            <span>{lang === 'en' ? 'Our Guiding Light & Inspiration' : 'आमचे प्रेरणास्थान व मार्गदर्शक'}</span>
           </div>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#1A1A1A] tracking-tight">
+          <h2 className="text-2xl sm:text-4xl lg:text-5xl font-extrabold text-[#1A1A1A] tracking-tight">
             {lang === 'en' ? 'Inspiration & Mentor' : 'प्रेरणास्थान व मार्गदर्शक'}
           </h2>
-          <div className="h-1.5 w-20 bg-gradient-to-r from-[#8B1A1A] to-[#D4A017] rounded-full mx-auto mt-4" />
+          <div className="h-1.5 w-16 sm:w-20 bg-gradient-to-r from-[#8B1A1A] to-[#D4A017] rounded-full mx-auto mt-3 sm:mt-4" />
         </div>
 
         {/* Main card */}
         <div 
-          className="bg-white rounded-3xl shadow-xl border border-[#8B1A1A]/10 overflow-hidden"
+          className="bg-white rounded-2xl sm:rounded-3xl shadow-xl border border-[#8B1A1A]/10 overflow-hidden"
           data-aos="fade-up"
         >
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-0">
             
             {/* Left Image & Identity */}
-            <div className="lg:col-span-5 bg-gradient-to-br from-[#8B1A1A] via-[#7A1515] to-[#5C0E0E] text-white p-8 sm:p-10 flex flex-col justify-between relative overflow-hidden">
+            <div className="lg:col-span-5 bg-gradient-to-br from-[#8B1A1A] via-[#7A1515] to-[#5C0E0E] text-white p-5 sm:p-8 lg:p-10 flex flex-col justify-between relative overflow-hidden">
               <div className="absolute top-0 right-0 -mr-16 -mt-16 w-64 h-64 rounded-full bg-white/5 pointer-events-none" />
               <div className="absolute bottom-0 left-0 -ml-16 -mb-16 w-64 h-64 rounded-full bg-[#D4A017]/10 pointer-events-none" />
 
-              <div className="relative z-10 flex flex-col items-center lg:items-start">
-                <div className="relative mx-auto lg:mx-0 w-48 sm:w-60 aspect-[3/4] rounded-2xl overflow-hidden shadow-2xl border-4 border-[#D4A017]/40 mb-6 bg-black/20 group">
+              <div className="relative z-10 flex flex-col items-center lg:items-start w-full">
+                <div className="relative mx-auto lg:mx-0 w-44 sm:w-56 aspect-[3/4] rounded-2xl overflow-hidden shadow-2xl border-4 border-[#D4A017]/40 mb-5 sm:mb-6 bg-black/20 group">
                   <img
                     src="/images/team/ajit-jadhav.jpg"
                     alt="आदरणीय श्री. अजितदादा जाधव"
@@ -51,23 +51,23 @@ const MentorSection = () => {
                     loading="lazy"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
-                  <div className="absolute bottom-3 left-3 right-3 text-center">
+                  <div className="absolute bottom-2.5 left-2.5 right-2.5 text-center">
                     <span className="inline-block bg-[#D4A017] text-[#1A1A1A] font-bold text-xs uppercase px-3 py-1 rounded-full shadow">
                       {lang === 'en' ? 'Mentor' : 'मार्गदर्शक'}
                     </span>
                   </div>
                 </div>
 
-                <div className="text-center lg:text-left">
-                  <h3 className="text-2xl sm:text-3xl font-bold text-white mb-1">
+                <div className="text-center lg:text-left w-full">
+                  <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-white mb-1.5">
                     {lang === 'en' ? 'Respected Shri Ajitdada Jadhav' : 'आदरणीय श्री. अजितदादा जाधव'}
                   </h3>
-                  <p className="text-[#D4A017] font-semibold text-base sm:text-lg mb-4">
+                  <p className="text-[#D4A017] font-semibold text-sm sm:text-base lg:text-lg mb-3 sm:mb-4">
                     {lang === 'en' 
                       ? 'Founder / President — Samanway Yuva Manch | Urmodi Premier League' 
                       : 'संस्थापक / अध्यक्ष – समन्वय युवा मंच | उरमोडी प्रीमियर लीग'}
                   </p>
-                  <p className="text-red-100 text-sm leading-relaxed border-t border-white/10 pt-4">
+                  <p className="text-red-100 text-xs sm:text-sm leading-relaxed border-t border-white/10 pt-3 sm:pt-4">
                     {lang === 'en'
                       ? 'A visionary social leader dedicated to grassroots upliftment, sports promotion, cultural empowerment, and community care.'
                       : 'समाजातील प्रत्येक घटकाला सोबत घेऊन निस्वार्थ भावनेने अविरत कार्य करणारे आदर्श सामाजिक नेतृत्व.'}
@@ -76,15 +76,15 @@ const MentorSection = () => {
               </div>
 
               {/* Highlights badge list */}
-              <div className="mt-8 pt-6 border-t border-white/10 relative z-10">
+              <div className="mt-6 sm:mt-8 pt-5 sm:pt-6 border-t border-white/10 relative z-10 w-full">
                 <h4 className="text-xs uppercase font-bold tracking-wider text-[#D4A017] mb-3">
                   {lang === 'en' ? 'Social Impact Glimpses' : 'प्रमुख सामाजिक योगदान'}
                 </h4>
                 <div className="space-y-2 text-xs sm:text-sm text-red-50">
                   {highlights.slice(0, 3).map((item, idx) => (
                     <div key={idx} className="flex items-start gap-2">
-                      <Heart size={14} className="mt-1 text-[#D4A017] shrink-0 fill-[#D4A017]" />
-                      <span>{item[lang]}</span>
+                      <Heart size={14} className="mt-0.5 text-[#D4A017] shrink-0 fill-[#D4A017]" />
+                      <span className="leading-snug">{item[lang]}</span>
                     </div>
                   ))}
                 </div>
@@ -92,16 +92,16 @@ const MentorSection = () => {
             </div>
 
             {/* Right Message Content */}
-            <div className="lg:col-span-7 p-8 sm:p-12 lg:p-14 flex flex-col justify-between bg-white">
+            <div className="lg:col-span-7 p-5 sm:p-8 lg:p-12 xl:p-14 flex flex-col justify-between bg-white">
               <div>
-                <div className="flex items-center gap-3 mb-6 text-[#8B1A1A]">
-                  <Quote size={40} className="text-[#D4A017] opacity-80" />
-                  <span className="text-sm font-bold uppercase tracking-wider text-[#8B1A1A]">
+                <div className="flex items-center gap-2.5 sm:gap-3 mb-4 sm:mb-6 text-[#8B1A1A]">
+                  <Quote size={32} className="text-[#D4A017] opacity-80 sm:w-10 sm:h-10 shrink-0" />
+                  <span className="text-xs sm:text-sm font-bold uppercase tracking-wider text-[#8B1A1A]">
                     {lang === 'en' ? 'A Tribute of Gratitude & Inspiration' : 'कृतज्ञतापूर्वक मनोगत व प्रेरणा'}
                   </span>
                 </div>
 
-                <div className="prose prose-slate max-w-none text-[#333333] space-y-4 text-base sm:text-lg leading-relaxed">
+                <div className="prose prose-slate max-w-none text-[#333333] space-y-3.5 sm:space-y-4 text-sm sm:text-base lg:text-lg leading-relaxed">
                   <p className="font-medium text-[#1A1A1A]">
                     {lang === 'en' ? (
                       'I have witnessed the selfless social work of respected Ajitdada since my school days. How to work for society with dedication and selflessness is an inspiration I drew directly from Dada’s life and actions.'
@@ -118,8 +118,8 @@ const MentorSection = () => {
                     )}
                   </p>
 
-                  <div className="my-6 p-4 sm:p-5 rounded-2xl bg-[#FFF5F5] border-l-4 border-[#8B1A1A]">
-                    <p className="font-semibold text-[#8B1A1A] italic text-base sm:text-lg m-0">
+                  <div className="my-4 sm:my-6 p-3.5 sm:p-5 rounded-xl sm:rounded-2xl bg-[#FFF5F5] border-l-4 border-[#8B1A1A]">
+                    <p className="font-semibold text-[#8B1A1A] italic text-sm sm:text-base lg:text-lg m-0 leading-relaxed">
                       {lang === 'en'
                         ? '“Dada’s work is not limited to mere assistance; it inspires everyone to unite every section of society and march forward together.”'
                         : '“दादांचे कार्य केवळ मदतीपुरते मर्यादित नसून, समाजातील प्रत्येक घटकाला सोबत घेऊन पुढे जाण्याची प्रेरणा देणारे आहे.”'}
@@ -142,7 +142,7 @@ const MentorSection = () => {
                     )}
                   </p>
 
-                  <p className="text-[#8B1A1A] font-bold text-lg pt-2">
+                  <p className="text-[#8B1A1A] font-bold text-base sm:text-lg pt-1 sm:pt-2">
                     {lang === 'en'
                       ? '“Dada, the inspiration drawn from your noble journey is the true strength of our Sankalp!”'
                       : '“दादा, आपल्या कार्यातून मिळालेली प्रेरणा हीच आमच्या संकल्पाची खरी ताकद आहे!”'}
@@ -151,22 +151,22 @@ const MentorSection = () => {
               </div>
 
               {/* Sign-off */}
-              <div className="mt-8 pt-6 border-t border-gray-100 flex items-center justify-between flex-wrap gap-4">
+              <div className="mt-6 sm:mt-8 pt-5 sm:pt-6 border-t border-gray-100 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
                 <div>
                   <p className="text-xs uppercase tracking-wider text-gray-500 font-medium mb-1">
                     {lang === 'en' ? 'With warm regards,' : 'सस्नेह,'}
                   </p>
-                  <p className="text-lg sm:text-xl font-bold text-[#1A1A1A] flex items-center gap-1.5">
+                  <p className="text-base sm:text-xl font-bold text-[#1A1A1A] flex items-center gap-1.5">
                     <span>✍🏼</span>
                     <span>{lang === 'en' ? 'Praveen Jadhav' : 'प्रवीण जाधव'}</span>
                   </p>
-                  <p className="text-sm font-semibold text-[#8B1A1A]">
+                  <p className="text-xs sm:text-sm font-semibold text-[#8B1A1A]">
                     {lang === 'en' ? 'Founder / President — Sankalp Foundation' : 'संस्थापक/अध्यक्ष – संकल्प फाऊंडेशन'}
                   </p>
                 </div>
 
-                <div className="flex items-center gap-2 text-xs font-semibold px-4 py-2 rounded-xl bg-[#FFF5F5] text-[#8B1A1A] border border-[#8B1A1A]/15">
-                  <Award size={18} className="text-[#D4A017]" />
+                <div className="self-start sm:self-auto inline-flex items-center gap-2 text-xs font-semibold px-3 sm:px-4 py-2 rounded-xl bg-[#FFF5F5] text-[#8B1A1A] border border-[#8B1A1A]/15">
+                  <Award size={16} className="text-[#D4A017] shrink-0" />
                   <span>{lang === 'en' ? 'Guided by Noble Values' : 'मूल्याधिष्ठित समाजसेवा'}</span>
                 </div>
               </div>
@@ -182,3 +182,4 @@ const MentorSection = () => {
 };
 
 export default MentorSection;
+

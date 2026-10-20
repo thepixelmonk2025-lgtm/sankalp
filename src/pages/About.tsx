@@ -22,14 +22,14 @@ const About: React.FC = () => {
 
       <main id="main-content" className="pt-16">
         {/* Page hero banner */}
-        <div className="bg-[#8B1A1A] py-20 px-4 text-center relative overflow-hidden">
+        <div className="bg-[#8B1A1A] py-12 sm:py-20 px-4 text-center relative overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-r from-black/40 via-transparent to-black/30 pointer-events-none" />
           <div className="relative z-10 max-w-4xl mx-auto">
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-4" data-aos="fade-up">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-3 sm:mb-4" data-aos="fade-up">
               {t('about.title')}
             </h1>
-            <div className="h-1.5 w-16 bg-[#D4A017] rounded-full mx-auto mb-4" />
-            <p className="text-red-100 text-base sm:text-lg max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+            <div className="h-1.5 w-14 sm:w-16 bg-[#D4A017] rounded-full mx-auto mb-3 sm:mb-4" />
+            <p className="text-red-100 text-sm sm:text-base md:text-lg max-w-2xl mx-auto leading-relaxed" data-aos="fade-up" data-aos-delay="100">
               {lang === 'en'
                 ? 'Committed to grassroots community transformation through education, healthcare, and human dignity.'
                 : 'शिक्षण, आरोग्य आणि सामाजिक न्यायाच्या माध्यमातून तळागाळातील घटकांपर्यंत पोहोचण्याचा आमचा प्रामाणिक संकल्प.'}
@@ -41,64 +41,64 @@ const About: React.FC = () => {
         <AdvisorsMarquee />
 
         {/* Story, Mission & Vision Cards */}
-        <section className="py-16 md:py-24 bg-white" aria-label="Our story and mission">
+        <section className="py-10 sm:py-16 md:py-24 bg-white" aria-label="Our story and mission">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             
             {/* Story Card */}
             <div 
-              className="bg-[#FFF8F8] border border-[#8B1A1A]/15 rounded-3xl p-8 sm:p-12 mb-16 shadow-sm"
+              className="bg-[#FFF8F8] border border-[#8B1A1A]/15 rounded-2xl sm:rounded-3xl p-5 sm:p-8 md:p-12 mb-8 sm:mb-16 shadow-sm"
               data-aos="fade-up"
             >
-              <div className="flex items-center gap-3 mb-4">
-                <div className="w-12 h-12 rounded-xl bg-[#8B1A1A] text-white flex items-center justify-center shadow-md">
-                  <BookOpen size={24} />
+              <div className="flex items-center gap-3 mb-3 sm:mb-4">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-[#8B1A1A] text-white flex items-center justify-center shadow-md shrink-0">
+                  <BookOpen size={20} className="sm:w-6 sm:h-6" />
                 </div>
                 <div>
-                  <h2 className="text-2xl sm:text-3xl font-bold text-[#1A1A1A]">
+                  <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-[#1A1A1A]">
                     {t('about.story_heading')}
                   </h2>
-                  <div className="h-1 w-12 bg-[#D4A017] rounded-full mt-1" />
+                  <div className="h-1 w-10 sm:w-12 bg-[#D4A017] rounded-full mt-1" />
                 </div>
               </div>
-              <p className="text-gray-700 text-base sm:text-lg leading-relaxed mt-4 max-w-4xl">
+              <p className="text-gray-700 text-sm sm:text-base md:text-lg leading-relaxed mt-3 sm:mt-4 max-w-4xl">
                 {t('about.story')}
               </p>
             </div>
 
             {/* Mission & Vision Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-5 sm:gap-8">
               {/* Mission */}
               <div 
-                className="bg-white border-2 border-[#8B1A1A]/10 hover:border-[#8B1A1A]/30 rounded-3xl p-8 sm:p-10 shadow-md hover:shadow-xl transition-all duration-300"
+                className="bg-white border-2 border-[#8B1A1A]/10 hover:border-[#8B1A1A]/30 rounded-2xl sm:rounded-3xl p-5 sm:p-8 md:p-10 shadow-md hover:shadow-xl transition-all duration-300"
                 data-aos="fade-up"
                 data-aos-delay="100"
               >
-                <div className="w-14 h-14 rounded-2xl bg-[#8B1A1A]/10 text-[#8B1A1A] flex items-center justify-center mb-6">
-                  <Target size={28} className="text-[#8B1A1A]" />
+                <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-[#8B1A1A]/10 text-[#8B1A1A] flex items-center justify-center mb-4 sm:mb-6">
+                  <Target size={24} className="sm:w-7 sm:h-7 text-[#8B1A1A]" />
                 </div>
-                <h3 className="text-2xl font-bold text-[#1A1A1A] mb-3">
+                <h3 className="text-xl sm:text-2xl font-bold text-[#1A1A1A] mb-2 sm:mb-3">
                   {t('about.mission_heading')}
                 </h3>
-                <div className="h-1 w-10 bg-[#D4A017] rounded-full mb-4" />
-                <p className="text-gray-600 text-base sm:text-lg leading-relaxed">
+                <div className="h-1 w-10 bg-[#D4A017] rounded-full mb-3 sm:mb-4" />
+                <p className="text-gray-600 text-sm sm:text-base md:text-lg leading-relaxed">
                   {t('about.mission')}
                 </p>
               </div>
 
               {/* Vision */}
               <div 
-                className="bg-white border-2 border-[#8B1A1A]/10 hover:border-[#8B1A1A]/30 rounded-3xl p-8 sm:p-10 shadow-md hover:shadow-xl transition-all duration-300"
+                className="bg-white border-2 border-[#8B1A1A]/10 hover:border-[#8B1A1A]/30 rounded-2xl sm:rounded-3xl p-5 sm:p-8 md:p-10 shadow-md hover:shadow-xl transition-all duration-300"
                 data-aos="fade-up"
                 data-aos-delay="200"
               >
-                <div className="w-14 h-14 rounded-2xl bg-[#D4A017]/15 text-[#D4A017] flex items-center justify-center mb-6">
-                  <Eye size={28} className="text-[#D4A017]" />
+                <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-[#D4A017]/15 text-[#D4A017] flex items-center justify-center mb-4 sm:mb-6">
+                  <Eye size={24} className="sm:w-7 sm:h-7 text-[#D4A017]" />
                 </div>
-                <h3 className="text-2xl font-bold text-[#1A1A1A] mb-3">
+                <h3 className="text-xl sm:text-2xl font-bold text-[#1A1A1A] mb-2 sm:mb-3">
                   {t('about.vision_heading')}
                 </h3>
-                <div className="h-1 w-10 bg-[#D4A017] rounded-full mb-4" />
-                <p className="text-gray-600 text-base sm:text-lg leading-relaxed">
+                <div className="h-1 w-10 bg-[#D4A017] rounded-full mb-3 sm:mb-4" />
+                <p className="text-gray-600 text-sm sm:text-base md:text-lg leading-relaxed">
                   {t('about.vision')}
                 </p>
               </div>
@@ -111,23 +111,23 @@ const About: React.FC = () => {
         <MentorSection />
 
         {/* Leadership & Foundation Members */}
-        <section className="py-16 md:py-24 bg-[#FBF0F0]" aria-label="Leadership team">
+        <section className="py-10 sm:py-16 md:py-24 bg-[#FBF0F0]" aria-label="Leadership team">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <SectionHeading 
               title={lang === 'en' ? 'Our Governing Board & Team' : 'कार्यकारिणी व मार्गदर्शक मंडळ'} 
               subtitle={lang === 'en' ? 'The committed individuals driving our mission with passion and transparency' : 'ध्येयनिष्ठ आणि समर्पित भावनेने परिवर्तनाची धुरा सांभाळणारे आमचे शिलेदार'}
             />
             
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 sm:gap-8 mt-12">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6 lg:gap-8 mt-8 sm:mt-12">
               {teamMembers.map((member, i) => (
                 <div
                   key={member.id}
-                  className="bg-white rounded-3xl p-6 text-center shadow-md hover:shadow-xl transition-all duration-300 border border-[#8B1A1A]/10 flex flex-col items-center justify-between group hover:-translate-y-1"
+                  className="bg-white rounded-2xl sm:rounded-3xl p-5 sm:p-6 text-center shadow-md hover:shadow-xl transition-all duration-300 border border-[#8B1A1A]/10 flex flex-col items-center justify-between group hover:-translate-y-1"
                   data-aos="fade-up"
                   data-aos-delay={(i % 4) * 80}
                 >
                   <div className="w-full flex flex-col items-center">
-                    <div className="relative w-28 h-28 sm:w-32 sm:h-32 mb-4 rounded-full overflow-hidden bg-gradient-to-tr from-[#8B1A1A] to-[#D4A017] p-1 shadow-lg group-hover:scale-105 transition-transform duration-300">
+                    <div className="relative w-24 h-24 sm:w-32 sm:h-32 mb-3.5 sm:mb-4 rounded-full overflow-hidden bg-gradient-to-tr from-[#8B1A1A] to-[#D4A017] p-1 shadow-lg group-hover:scale-105 transition-transform duration-300">
                       <div className="w-full h-full rounded-full overflow-hidden bg-white">
                         <img
                           src={member.photo}
@@ -138,15 +138,15 @@ const About: React.FC = () => {
                       </div>
                     </div>
 
-                    <span className="inline-block px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-[#FFF5F5] text-[#8B1A1A] border border-[#8B1A1A]/20 mb-2">
+                    <span className="inline-block px-2.5 py-0.5 sm:px-3 sm:py-1 rounded-full text-[11px] sm:text-xs font-bold uppercase tracking-wider bg-[#FFF5F5] text-[#8B1A1A] border border-[#8B1A1A]/20 mb-2">
                       {member.role[lang]}
                     </span>
 
-                    <h3 className="font-bold text-[#1A1A1A] text-lg sm:text-xl mb-2">
+                    <h3 className="font-bold text-[#1A1A1A] text-base sm:text-lg lg:text-xl mb-1.5 sm:mb-2 leading-snug">
                       {member.name[lang]}
                     </h3>
 
-                    <p className="text-gray-600 text-xs sm:text-sm leading-relaxed line-clamp-4 group-hover:line-clamp-none transition-all">
+                    <p className="text-gray-600 text-xs sm:text-sm leading-relaxed">
                       {member.bio[lang]}
                     </p>
                   </div>
@@ -157,20 +157,20 @@ const About: React.FC = () => {
         </section>
 
         {/* Registration Details */}
-        <section className="py-16 bg-white" aria-label="Registration details">
+        <section className="py-10 sm:py-16 bg-white" aria-label="Registration details">
           <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center" data-aos="fade-up">
             <SectionHeading title={t('about.registration_heading')} />
-            <div className="bg-[#FBF0F0] rounded-2xl p-8 mt-6 grid grid-cols-1 sm:grid-cols-3 gap-6 text-center">
+            <div className="bg-[#FBF0F0] rounded-2xl p-5 sm:p-8 mt-6 grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 text-center border border-[#8B1A1A]/10">
               {[
                 { label: 'Registration No.', value: t('about.reg_number') },
                 { label: '12A Certificate', value: t('about.reg_12a') },
                 { label: '80G Certificate', value: t('about.reg_80g') },
               ].map((item) => (
-                <div key={item.label}>
-                  <p className="text-[#8B1A1A] font-bold text-sm uppercase tracking-wide mb-1">
+                <div key={item.label} className="bg-white/80 sm:bg-transparent rounded-xl p-3 sm:p-0">
+                  <p className="text-[#8B1A1A] font-bold text-xs sm:text-sm uppercase tracking-wide mb-1">
                     {item.label}
                   </p>
-                  <p className="text-[#1A1A1A] font-semibold">{item.value}</p>
+                  <p className="text-[#1A1A1A] font-semibold text-sm sm:text-base break-words">{item.value}</p>
                 </div>
               ))}
             </div>

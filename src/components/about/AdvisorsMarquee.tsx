@@ -67,31 +67,31 @@ const AdvisorsMarquee = () => {
   const marqueeList = [...advisors, ...advisors];
 
   return (
-    <section className="py-12 bg-gradient-to-r from-[#FFF5F5] via-white to-[#FFF5F5] border-y border-[#8B1A1A]/10 overflow-hidden" aria-label="Advisors and Mentors">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-6 text-center">
-        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#8B1A1A]/10 text-[#8B1A1A] font-semibold text-xs uppercase tracking-wider mb-2">
-          <Award size={14} className="text-[#D4A017]" />
-          {lang === 'en' ? 'Honorary Mentors & Advisors' : 'मार्गदर्शक मंडळ'}
+    <section className="py-8 sm:py-12 bg-gradient-to-r from-[#FFF5F5] via-white to-[#FFF5F5] border-y border-[#8B1A1A]/10 overflow-hidden" aria-label="Advisors and Mentors">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-5 sm:mb-6 text-center">
+        <div className="inline-flex items-center gap-1.5 sm:gap-2 px-3 py-1 rounded-full bg-[#8B1A1A]/10 text-[#8B1A1A] font-semibold text-xs uppercase tracking-wider mb-2">
+          <Award size={14} className="text-[#D4A017] shrink-0" />
+          <span>{lang === 'en' ? 'Honorary Mentors & Advisors' : 'मार्गदर्शक मंडळ'}</span>
         </div>
-        <h3 className="text-2xl sm:text-3xl font-bold text-[#1A1A1A]">
+        <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-[#1A1A1A]">
           {lang === 'en' ? 'Our Respected Mentors & Advisors' : 'मार्गदर्शक'}
         </h3>
-        <p className="text-gray-500 text-xs sm:text-sm mt-1">
+        <p className="text-gray-500 text-xs sm:text-sm mt-1 max-w-xl mx-auto">
           {lang === 'en' ? 'Distinguished personalities and entrepreneurs guiding our journey' : 'संस्थेच्या सामाजिक वाटचालीस बहुमूल्य मार्गदर्शन करणारे सन्माननीय उद्योजक व मान्यवर'}
         </p>
       </div>
 
       {/* Marquee Wrapper */}
-      <div className="relative w-full overflow-hidden py-3">
+      <div className="relative w-full overflow-hidden py-2 sm:py-3">
         {/* Soft edge blur fades */}
-        <div className="absolute left-0 top-0 bottom-0 w-16 sm:w-28 bg-gradient-to-r from-[#FFF5F5] to-transparent z-10 pointer-events-none" />
-        <div className="absolute right-0 top-0 bottom-0 w-16 sm:w-28 bg-gradient-to-l from-[#FFF5F5] to-transparent z-10 pointer-events-none" />
+        <div className="absolute left-0 top-0 bottom-0 w-8 sm:w-24 bg-gradient-to-r from-[#FFF5F5] to-transparent z-10 pointer-events-none" />
+        <div className="absolute right-0 top-0 bottom-0 w-8 sm:w-24 bg-gradient-to-l from-[#FFF5F5] to-transparent z-10 pointer-events-none" />
 
-        <div className="animate-marquee py-2 flex items-center">
+        <div className="animate-marquee py-1.5 flex items-center">
           {marqueeList.map((advisor, index) => (
             <div
               key={`${advisor.nameEn}-${index}`}
-              className="mx-3 sm:mx-4 flex-shrink-0 bg-white border border-[#8B1A1A]/15 rounded-2xl px-5 py-4 shadow-sm hover:shadow-md hover:border-[#8B1A1A]/40 transition-all duration-300 w-[280px] sm:w-[320px] flex items-start gap-3"
+              className="mx-2.5 sm:mx-4 flex-shrink-0 bg-white border border-[#8B1A1A]/15 rounded-xl sm:rounded-2xl px-4 sm:px-5 py-3 sm:py-4 shadow-sm hover:shadow-md hover:border-[#8B1A1A]/40 transition-all duration-300 w-[260px] sm:w-[320px] flex items-start gap-2.5 sm:gap-3"
             >
               <div className="w-10 h-10 rounded-xl bg-[#FFF0F0] text-[#8B1A1A] flex items-center justify-center shrink-0 border border-[#8B1A1A]/20">
                 <Briefcase size={18} className="text-[#8B1A1A]" />
