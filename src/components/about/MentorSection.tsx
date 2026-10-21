@@ -48,19 +48,22 @@ const MentorSection = () => {
                 {/* Refined Portrait Card */}
                 <div className="relative mb-6 group w-full max-w-[280px] sm:max-w-[320px]">
                   {/* Subtle golden halo glow */}
-                  <div className="absolute -inset-1 bg-gradient-to-tr from-[#D4A017] via-amber-200 to-[#D4A017]/40 rounded-3xl opacity-60 blur-sm group-hover:opacity-100 transition duration-500" />
+                  <div className="absolute -inset-1 bg-gradient-to-tr from-[#D4A017] via-amber-300 to-[#D4A017]/50 rounded-2xl sm:rounded-3xl opacity-70 blur-sm group-hover:opacity-100 transition duration-500" />
                   
-                  <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden shadow-2xl bg-gradient-to-b from-stone-100 via-amber-50 to-stone-200 border-2 border-[#D4A017]/60">
+                  <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden shadow-2xl border-2 border-[#D4A017]/80 aspect-[3/4]">
                     <img
                       src="/images/team/ajit-dada-jadhav.png"
                       alt="आदरणीय श्री. अजित दादा जाधव"
-                      className="w-full h-auto max-h-[380px] sm:max-h-[420px] object-contain object-bottom pt-4 px-2 filter drop-shadow-md group-hover:scale-102 transition-transform duration-500"
+                      className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500 block"
                       loading="lazy"
                     />
 
+                    {/* Subtle bottom shadow vignette for contrast */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent pointer-events-none" />
+
                     {/* Elegant floating badge */}
                     <div className="absolute top-3 right-3">
-                      <span className="inline-flex items-center gap-1.5 bg-[#8B1A1A] text-white border border-[#D4A017]/40 font-bold text-xs uppercase px-3 py-1 rounded-full shadow-lg backdrop-blur-sm">
+                      <span className="inline-flex items-center gap-1.5 bg-[#8B1A1A]/90 text-white border border-[#D4A017] font-bold text-xs uppercase px-3 py-1 rounded-full shadow-lg backdrop-blur-md">
                         <Sparkles size={12} className="text-[#D4A017]" />
                         <span>{lang === 'en' ? 'Mentor' : 'मार्गदर्शक'}</span>
                       </span>
