@@ -108,6 +108,16 @@ export const teamMembers: TeamMember[] = [
       mr: 'सतीश प्रधान ज्ञानसाधना महाविद्यालय ठाणे येथे प्राध्यापक. M.A., B.Ed., M.Phil शिक्षण आणि १५ वर्षांच्या अनुभवातून शैक्षणिक उपक्रमांना मार्गदर्शन.',
     },
     photo: '/images/team/nanda-ahire-jadhav.webp',
+  },
+  {
+    id: 'prajwal-shinde',
+    name: { en: 'Prajwal Shinde', mr: 'प्रज्वल शिंदे' },
+    role: { en: 'Social Media & Marketing Head', mr: 'सोशल मीडिया आणि मार्केटिंग हेड' },
+    bio: {
+      en: '“Connecting society through social media.” Prajwal Shinde serves as the Social Media & Marketing Head at Sankalp Foundation. She holds a B.CA degree from SNDT University and has demonstrated strong expertise in digital platforms, brand promotion, and effective online communication. Actively participating in the foundation’s social initiatives, Prajwal manages social media, digital marketing, and public outreach to enhance the visibility and impact of Sankalp Foundation’s programs.',
+      mr: '“सोशल माध्यमांद्वारे समाजाशी जोडले जावे.” प्रज्वल शिंदे संकल्प फाऊंडेशनमध्ये Social Media आणि Marketing Head म्हणून कार्यरत आहेत. त्यांनी SNDT University मधून B.CA पदवी पूर्ण केली असून, डिजिटल प्लॅटफॉर्मवर प्रभावी संवाद साधण्यात आणि ब्रँड प्रमोशनमध्ये प्रावीण्य आहे. संकल्प फाऊंडेशनच्या सामाजिक उपक्रमांत सक्रिय सहभाग असून, त्या सोशल मीडिया, डिजिटल मार्केटिंग आणि जनसंपर्काद्वारे संस्थेच्या उपक्रमांचा प्रभाव आणि पोहोच वाढवतात.',
+    },
+    photo: '/images/team/prajwal-shinde.webp',
   }
 ];
 
