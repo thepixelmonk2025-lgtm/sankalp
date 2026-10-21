@@ -38,36 +38,49 @@ const MentorSection = () => {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-0">
             
             {/* Left Image & Identity */}
-            <div className="lg:col-span-5 bg-gradient-to-br from-[#8B1A1A] via-[#7A1515] to-[#5C0E0E] text-white p-5 sm:p-8 lg:p-10 flex flex-col justify-between relative overflow-hidden">
-              <div className="absolute top-0 right-0 -mr-16 -mt-16 w-64 h-64 rounded-full bg-white/5 pointer-events-none" />
-              <div className="absolute bottom-0 left-0 -ml-16 -mb-16 w-64 h-64 rounded-full bg-[#D4A017]/10 pointer-events-none" />
+            <div className="lg:col-span-5 bg-gradient-to-br from-[#8B1A1A] via-[#731414] to-[#4F0B0B] text-white p-6 sm:p-8 lg:p-10 flex flex-col justify-between relative overflow-hidden">
+              {/* Subtle decorative background circles */}
+              <div className="absolute top-0 right-0 -mr-20 -mt-20 w-72 h-72 rounded-full bg-white/5 pointer-events-none blur-2xl" />
+              <div className="absolute bottom-0 left-0 -ml-20 -mb-20 w-72 h-72 rounded-full bg-[#D4A017]/10 pointer-events-none blur-2xl" />
 
-              <div className="relative z-10 flex flex-col items-center lg:items-start w-full">
-                <div className="relative mx-auto lg:mx-0 w-44 sm:w-56 aspect-[3/4] rounded-2xl overflow-hidden shadow-2xl border-4 border-[#D4A017]/40 mb-5 sm:mb-6 bg-black/20 group">
-                  <img
-                    src="/images/team/ajit-dada-jadhav.png"
-                    alt="आदरणीय श्री. अजित दादा जाधव"
-                    className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
-                    loading="lazy"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
-                  <div className="absolute bottom-2.5 left-2.5 right-2.5 text-center">
-                    <span className="inline-block bg-[#D4A017] text-[#1A1A1A] font-bold text-xs uppercase px-3 py-1 rounded-full shadow">
-                      {lang === 'en' ? 'Mentor' : 'मार्गदर्शक'}
-                    </span>
+              <div className="relative z-10 flex flex-col items-center text-center w-full">
+                
+                {/* Refined Portrait Card */}
+                <div className="relative mb-6 group w-full max-w-[280px] sm:max-w-[320px]">
+                  {/* Subtle golden halo glow */}
+                  <div className="absolute -inset-1 bg-gradient-to-tr from-[#D4A017] via-amber-200 to-[#D4A017]/40 rounded-3xl opacity-60 blur-sm group-hover:opacity-100 transition duration-500" />
+                  
+                  <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden shadow-2xl bg-gradient-to-b from-stone-100 via-amber-50 to-stone-200 border-2 border-[#D4A017]/60">
+                    <img
+                      src="/images/team/ajit-dada-jadhav.png"
+                      alt="आदरणीय श्री. अजित दादा जाधव"
+                      className="w-full h-auto max-h-[380px] sm:max-h-[420px] object-contain object-bottom pt-4 px-2 filter drop-shadow-md group-hover:scale-102 transition-transform duration-500"
+                      loading="lazy"
+                    />
+
+                    {/* Elegant floating badge */}
+                    <div className="absolute top-3 right-3">
+                      <span className="inline-flex items-center gap-1.5 bg-[#8B1A1A] text-white border border-[#D4A017]/40 font-bold text-xs uppercase px-3 py-1 rounded-full shadow-lg backdrop-blur-sm">
+                        <Sparkles size={12} className="text-[#D4A017]" />
+                        <span>{lang === 'en' ? 'Mentor' : 'मार्गदर्शक'}</span>
+                      </span>
+                    </div>
                   </div>
                 </div>
 
-                <div className="text-center lg:text-left w-full">
-                  <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-white mb-1.5">
+                {/* Identity & Credentials */}
+                <div className="w-full">
+                  <h3 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight mb-2">
                     {lang === 'en' ? 'Respected Shri Ajit Dada Jadhav' : 'आदरणीय श्री. अजित दादा जाधव'}
                   </h3>
-                  <p className="text-[#D4A017] font-semibold text-sm sm:text-base lg:text-lg mb-3 sm:mb-4">
-                    {lang === 'en' 
-                      ? 'Founder / President — Samanway Yuva Manch | Urmodi Premier League' 
-                      : 'संस्थापक / अध्यक्ष – समन्वय युवा मंच | उरमोडी प्रीमियर लीग'}
-                  </p>
-                  <p className="text-red-100 text-xs sm:text-sm leading-relaxed border-t border-white/10 pt-3 sm:pt-4">
+                  <div className="inline-block bg-[#D4A017]/20 border border-[#D4A017]/40 rounded-xl px-4 py-1.5 mb-4">
+                    <p className="text-[#F6D06F] font-bold text-xs sm:text-sm">
+                      {lang === 'en' 
+                        ? 'Founder / President — Samanway Yuva Manch | Urmodi Premier League' 
+                        : 'संस्थापक / अध्यक्ष – समन्वय युवा मंच | उरमोडी प्रीमियर लीग'}
+                    </p>
+                  </div>
+                  <p className="text-red-100 text-xs sm:text-sm leading-relaxed border-t border-white/15 pt-3.5 max-w-sm mx-auto">
                     {lang === 'en'
                       ? 'A visionary social leader dedicated to grassroots upliftment, sports promotion, cultural empowerment, and community care.'
                       : 'समाजातील प्रत्येक घटकाला सोबत घेऊन निस्वार्थ भावनेने अविरत कार्य करणारे आदर्श सामाजिक नेतृत्व.'}
@@ -76,13 +89,14 @@ const MentorSection = () => {
               </div>
 
               {/* Highlights badge list */}
-              <div className="mt-6 sm:mt-8 pt-5 sm:pt-6 border-t border-white/10 relative z-10 w-full">
-                <h4 className="text-xs uppercase font-bold tracking-wider text-[#D4A017] mb-3">
-                  {lang === 'en' ? 'Social Impact Glimpses' : 'प्रमुख सामाजिक योगदान'}
+              <div className="mt-6 sm:mt-8 pt-5 sm:pt-6 border-t border-white/15 relative z-10 w-full">
+                <h4 className="text-xs uppercase font-bold tracking-wider text-[#D4A017] mb-3 text-center sm:text-left flex items-center justify-center sm:justify-start gap-1.5">
+                  <Award size={14} className="text-[#D4A017]" />
+                  <span>{lang === 'en' ? 'Key Social Contributions' : 'प्रमुख सामाजिक योगदान'}</span>
                 </h4>
                 <div className="space-y-2 text-xs sm:text-sm text-red-50">
                   {highlights.slice(0, 3).map((item, idx) => (
-                    <div key={idx} className="flex items-start gap-2">
+                    <div key={idx} className="flex items-start gap-2.5 bg-black/15 rounded-lg p-2 border border-white/5">
                       <Heart size={14} className="mt-0.5 text-[#D4A017] shrink-0 fill-[#D4A017]" />
                       <span className="leading-snug">{item[lang]}</span>
                     </div>
