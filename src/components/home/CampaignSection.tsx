@@ -5,6 +5,22 @@ import SectionHeading from '../shared/SectionHeading';
 
 const campaigns = [
   {
+    id: 'ek-wahi-ek-pen',
+    titleEn: 'Ek Wahi, Ek Pen — Educational Support Campaign',
+    titleMr: 'एक वही, एक पेन — शालेय साहित्य संकलन उपक्रम',
+    descEn: 'A special festival campaign inspiring citizens to donate notebooks, pens, and school kits during Ganeshotsav for underprivileged tribal and rural students.',
+    descMr: 'गणेशोत्सवाच्या पावन पर्वावर आदिवासी व ग्रामीण भागातील होतकरू विद्यार्थ्यांसाठी एक वही, एक पेन आणि शालेय साहित्य भेट देण्याचे आवाहन करणारी विशेष मोहीम.',
+    image: '/images/campaigns/ek-wahi-ek-pen-ganeshotsav.jpeg',
+  },
+  {
+    id: 'vidyarthi-dattak-yojana',
+    titleEn: 'Student Adoption Scheme (Vidyarthi Dattak Yojana)',
+    titleMr: 'संकल्प विद्यार्थी दत्तक योजना (परळी विभाग)',
+    descEn: 'Adopting and supporting orphaned, single-parent, and economically disadvantaged tribal children to provide uninterrupted formal education and life mentorship.',
+    descMr: 'परळी विभागातील अनाथ, एकल पालक व अत्यंत गरजू आदिवासी विद्यार्थ्यांना शिक्षणासाठी दत्तक घेऊन त्यांच्या उज्ज्वल भविष्यासाठी सर्वसमावेशक मदत.',
+    image: '/images/campaigns/vidyarthi-dattak-yojana.jpeg',
+  },
+  {
     id: 'annachhatra',
     titleEn: 'Annachhatra Food Support Campaign',
     titleMr: 'अन्नछत्र कार्यक्रम (अन्नदान म्हणजे जीवनदान)',
@@ -22,16 +38,16 @@ const campaigns = [
   },
   {
     id: 'school-kit',
-    titleEn: 'School Kit Donation Drive',
-    titleMr: 'शालेय साहित्य वाटप मोहीम',
-    descEn: 'Support our initiative to provide essential school supplies to underprivileged children in rural areas, empowering them to continue their education without barriers.',
-    descMr: 'ग्रामीण भागातील गरजू आणि होतकरू विद्यार्थ्यांना शालेय साहित्य पुरवण्यासाठी आमच्या मोहिमेला साथ द्या, जेणेकरून त्यांच्या शिक्षणात कोणताही खंड पडणार नाही.',
+    titleEn: 'School Kit & Bicycle Distribution Drive',
+    titleMr: 'शालेय साहित्य व सायकल वाटप मोहीम',
+    descEn: 'Support our initiative to provide essential school supplies, study desks, water purifiers, and bicycles to underprivileged children in remote rural schools.',
+    descMr: 'ग्रामीण व दुर्गम भागातील विद्यार्थ्यांना शालेय साहित्य, वॉटर फिल्टर, खेळ साहित्य व लांबून येणाऱ्या मुलींसाठी सायकली वाटप मोहीम.',
     image: '/images/campaigns/school-kit-donation.jpg',
   },
   {
     id: 'sanitary-pad',
-    titleEn: 'Sanitary Pad Distribution',
-    titleMr: 'सॅनिटरी पॅड वाटप मोहीम',
+    titleEn: 'Sanitary Pad & Women Health Distribution',
+    titleMr: 'सॅनिटरी पॅड व महिला आरोग्य मोहीम',
     descEn: 'Join us in promoting menstrual hygiene and health awareness among women and girls in rural communities by providing them with free sanitary pads.',
     descMr: 'ग्रामीण भागातील महिला आणि मुलींमध्ये मासिक पाळीबद्दल आरोग्यविषयक जागरूकता निर्माण करण्यासाठी आणि त्यांना सॅनिटरी पॅड मोफत वाटप करण्यासाठी आम्हाला मदत करा.',
     image: '/images/campaigns/sanitary-pad-donation.jpg',

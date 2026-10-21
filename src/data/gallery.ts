@@ -12,6 +12,78 @@ export interface GalleryImage {
 
 export const galleryImages: GalleryImage[] = [
   {
+    id: 'g-rakshabandhan-anand',
+    src: '/images/gallery/rakshabandhan-anand-mahotsav.jpeg',
+    alt: { en: 'Rakshabandhan Anand Mahotsav at Jambhalipada Z.P. School', mr: 'राखी आणि आनंद महोत्सव — जि. प. शाळा जांभाळीपाडा' },
+    caption: { en: 'Sankalp Rakshabandhan Anand Mahotsav with tribal school children', mr: 'संकल्प समन्वय राखी व आनंद महोत्सव' },
+    description: {
+      en: 'Celebrating sacred bonds of love, care, and social unity with tribal students at Zilla Parishad School Jambhalipada. Foundation volunteers spent the auspicious day distributing sweets, smiles, and educational encouragement.',
+      mr: 'जि. प. शाळा जांभाळीपाडा येथे आदिवासी मुलांसोबत संकल्प फाऊंडेशनच्या वतीने "आनंद महोत्सव व रक्षाबंधन सोहळा" साजरा करण्यात आला. विद्यार्थ्यांच्या चेहऱ्यावर आनंद आणि नवी उमेद फुलवणारा हा भावूक क्षण.'
+    },
+    date: 'August 2026',
+    category: 'Community',
+  },
+  {
+    id: 'g-umbarkhadwa-shaikshanik',
+    src: '/images/gallery/umbarkhadwa-shaikshanik-sohala.jpeg',
+    alt: { en: 'Educational Kit & Sportswear Distribution at Umbarkhadwa School', mr: 'शैक्षणिक साहित्य व क्रीडा गणवेश वाटप समारंभ — उंबरखडवा' },
+    caption: { en: 'Distribution Ceremony at Umbarkhadwa Z.P. School, Sakri', mr: 'जि. प. शाळा उंबरखडवा येथे साहित्य वाटप सोहळा' },
+    description: {
+      en: 'Grand educational kit distribution event at Z.P. Primary School Umbarkhadwa, Sakri. Children received full study materials, school uniforms, and clean drinking water purification systems.',
+      mr: 'धुळे जिल्ह्यातील साक्री तालुक्यातील जि. प. शाळा उंबरखडवा येथे विद्यार्थ्यांना शैक्षणिक साहित्य, क्रीडा कपडे व पाणी फिल्टर वाटप समारंभ मान्यवरांच्या उपस्थितीत संपन्न झाला.'
+    },
+    date: 'February 2026',
+    category: 'Education',
+  },
+  {
+    id: 'g-kutumb-vruddhashram',
+    src: '/images/gallery/kutumb-vruddhashram-bhet.jpeg',
+    alt: { en: 'Support and Visit to Kutumb Old Age Home, Kalyan', mr: 'कुटुंब वृद्धाश्रम भेट व धान्य-साहित्य मदत — कल्याण' },
+    caption: { en: 'Support to elderly destitute residents at Kutumb Vruddhashram', mr: 'कुटुंब वृद्धाश्रमात ज्येष्ठ नागरिकांना आधार व धान्य मदत' },
+    description: {
+      en: 'Sankalp Foundation extended a helping hand to Kutumb Vruddhashram (Kalyan East) managed by Kith & Kin Foundation, providing daily food grains, Shrimad Bhagavad Gita copies, calendars, and emotional support to elderly citizens.',
+      mr: 'किथ अँड किन फाऊंडेशन संचलित ‘कुटुंब वृद्धाश्रम’ (मलंग रोड, कल्याण पूर्व) येथे ज्येष्ठ नागरिकांना धान्य, भगवद्गीता ग्रंथ आणि आर्थिक-भावनिक आधार देण्याचा स्तुत्य उपक्रम संकल्प फाऊंडेशनने राबवला.'
+    },
+    date: 'January 2025',
+    category: 'Livelihood',
+  },
+  {
+    id: 'g-vruksharopan-plantation',
+    src: '/images/gallery/vruksharopan-plantation-field.jpeg',
+    alt: { en: 'Tree Plantation Drive at Satara Forest Belt', mr: 'सातारा परळी खोऱ्यात वृक्षारोपण मोहीम' },
+    caption: { en: 'Tree plantation drive: Bamboo staking and sapling planting', mr: 'पर्यावरण संवर्धन — वृक्षारोपण अभियान' },
+    description: {
+      en: 'Volunteers and youth actively planted native saplings with protective bamboo supports across Aalavadi, Navali, and Satara hilly terrains to protect ecology and promote a greener tomorrow.',
+      mr: 'वृक्षाचे करा संवर्धन, धरतीचे होईल नंदनवन! या अभियानांतर्गत परळी व कास पठार परिसरातील डोंगर भागात बांबूच्या संरक्षणासह देशी वृक्षांचे रोपण करण्यात आले.'
+    },
+    date: 'July 2023',
+    category: 'Environment',
+  },
+  {
+    id: 'g-vruksharopan-nandanvan',
+    src: '/images/gallery/vruksharopan-dharati-nandanvan.jpeg',
+    alt: { en: 'Community Tree Distribution Campaign', mr: 'शेतकऱ्यांना व युवकांना फळझाडे व देशी रोपांचे वाटप' },
+    caption: { en: 'Massive community participation in tree distribution', mr: 'पर्यावरण रक्षण व वृक्ष संवर्धन संकल्प' },
+    description: {
+      en: 'Distributing mango and indigenous trees to local village youth and farmers, fostering long-term environmental responsibility and agro-forestry livelihood opportunities.',
+      mr: 'ग्रामीण भागातील तरुण आणि शेतकरी बांधवांना फळझाडांचे वाटप करून हरित ग्राम अभियानाला गती देण्याचे कार्य संकल्प फाऊंडेशनतर्फे हाती घेण्यात आले.'
+    },
+    date: 'July 2023',
+    category: 'Environment',
+  },
+  {
+    id: 'g-blood-donation',
+    src: '/images/gallery/blood-donation-camp.jpeg',
+    alt: { en: 'Mega Blood Donation Camp Participation & Honors', mr: 'भव्य रक्तदान सोहळा व सन्मान' },
+    caption: { en: 'Mega Blood Donation Drive in community partnership', mr: 'रक्तदान हेच जीवनदान — सामाजिक उपक्रम' },
+    description: {
+      en: 'Active participation and coordination of Mega Blood Donation Camp at Hanuman Tekdi, recognizing voluntary donors and honoring community health contributors.',
+      mr: 'हनुमान टेकडी येथे आयोजित भव्य रक्तदान शिबिरात संकल्प फाऊंडेशनचा सक्रिय सहभाग. रक्तदात्यांना प्रमाणपत्र व सन्मान देऊन गौरविण्यात आले.'
+    },
+    date: 'January 2026',
+    category: 'Health',
+  },
+  {
     id: 'g-bhil-community',
     src: '/images/gallery/bhil-community.webp', // TODO: Save your photo as this name
     alt: { en: 'Helping Hand to Bhil Community', mr: 'भिल्ल समाजातील कुटुंबांना मदत' },

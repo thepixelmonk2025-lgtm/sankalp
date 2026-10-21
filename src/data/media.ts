@@ -10,6 +10,128 @@ export interface MediaArticle {
 
 export const mediaArticles: MediaArticle[] = [
   {
+    id: 'muktagiri-49-cycle-vatap',
+    title: {
+      en: 'Accelerating Education for Needy Students: 49 Bicycles Distributed by Sankalp Foundation',
+      mr: 'गरजू विद्यार्थ्यांना शिक्षणाची गती; संकल्प फाऊंडेशनकडून ४९ सायकलींचे वाटप — भुवन येथील जि. प. केंद्र शाळेतील विद्यार्थ्यांना दिलासा',
+    },
+    newspaper: {
+      en: 'Dainik Muktagiri (Satara)',
+      mr: 'दैनिक मुक्तागिरी (सातारा आवृत्ती)',
+    },
+    date: {
+      en: 'Mar 16, 2026',
+      mr: '१६ मार्च २०२६',
+    },
+    summary: {
+      en: 'To ease long walking distances for rural school children, Sankalp Foundation distributed 49 bicycles to students at Bhuvan Z.P. Central School, saving travel time and empowering their academic journey.',
+      mr: 'शिक्षणासाठी दूरवरून पायी प्रवास करणाऱ्या गरजू विद्यार्थ्यांना दिलासा देण्यासाठी भुवन येथील जि. प. केंद्र शाळेतील ४९ विद्यार्थ्यांना मोफत सायकलींचे वाटप करण्यात आले.',
+    },
+    image: '/images/media/muktagiri-49-cycle-vatap.jpeg',
+    featured: true,
+  },
+  {
+    id: 'punyanagari-bhuvan-cycle-vatap',
+    title: {
+      en: 'Distribution of 49 Bicycles to Rural Students at Bhuvan by Sankalp Foundation',
+      mr: 'संकल्प फाऊंडेशनकडून ४९ सायकलींचे वाटप — भुवन (ता. मुरबाड) जि. प. केंद्र शाळा',
+    },
+    newspaper: {
+      en: 'Dainik Punyanagari (Satara Edition)',
+      mr: 'दैनिक पुण्यनगरी (सातारा आवृत्ती)',
+    },
+    date: {
+      en: 'Mar 16, 2026',
+      mr: '१६ मार्च २०२६',
+    },
+    summary: {
+      en: 'School kits, cycle distribution and guidance provided in the presence of President Praveen Jadhav, Sakharam Pawar, Harishchandra Pawar, Devidas Pawar, and Vijay Ahire.',
+      mr: 'पायी चालत शाळेत जाणाऱ्या विद्यार्थ्यांचा वेळ वाचवून अभ्यासासाठी अधिक वेळ मिळावा यासाठी सायकल वाटप. संस्थेचे अध्यक्ष व पदाधिकारी उपस्थित.',
+    },
+    image: '/images/media/punyanagari-bhuvan-cycle-vatap.jpeg',
+  },
+  {
+    id: 'aawaj-shikshakancha-umbarkhadwa-prakashwat',
+    title: {
+      en: 'Dhyas Parivartanacha: Sankalp Foundation\'s Guiding Light at Umbarkhadwa Z.P. School',
+      mr: 'ध्यास परिवर्तनाचा.. उंबरखडवा शाळेत ‘संकल्पाची’ प्रकाशवाट — शैक्षणिक साहित्य, वॉटर फिल्टर व क्रीडा गणवेश वाटप',
+    },
+    newspaper: {
+      en: 'Aawaj Shikshakancha (Daily News)',
+      mr: 'आवाज शिक्षकांचा (डेली न्यूज)',
+    },
+    date: {
+      en: 'Special Feature (Dhule)',
+      mr: 'विशेष प्रसिद्धी (धुळे आवृत्ती)',
+    },
+    summary: {
+      en: 'Comprehensive support at Umbarkhadwa (Sakri) including clean water purifier system, student sports uniforms, Bhagavad Gita copies, and inspiring educational guidance.',
+      mr: 'जि. प. प्राथमिक शाळा उंबरखडवा (साक्री) येथे विद्यार्थ्यांच्या सर्वांगीण विकासासाठी स्पोर्ट्स ड्रेस, पिण्याच्या पाण्यासाठी जलशुद्धीकरण यंत्र व भगवद्गीता पुस्तकांचे वाटप.',
+    },
+    image: '/images/media/aawaj-shikshakancha-umbarkhadwa-prakashwat.jpeg',
+    featured: true,
+  },
+  {
+    id: 'pudhari-parli-shetkari-khol',
+    title: {
+      en: 'Waterproof Monsoon Sheets (Khoḷe) Distributed to 145 Farmers in Parali',
+      mr: 'परळीत संकल्प फाऊंडेशनतर्फे खोळांचे वाटप — १४५ शेतकरी बांधवांना प्रत्यक्ष मदत',
+    },
+    newspaper: {
+      en: 'Dainik Pudhari (Satara)',
+      mr: 'दैनिक पुढारी (सातारा)',
+    },
+    date: {
+      en: 'Satara District Edition',
+      mr: 'पुढारी वृत्तसेवा (परळी)',
+    },
+    summary: {
+      en: 'Sankalp Foundation distributed rain protection sheets to 145 paddy farmers across Satara, Aalavadi, Navali, and Venekhol to protect them during monsoon agricultural planting.',
+      mr: 'सातारा, आलवडी, नावली तसेच वेणेखोल येथील १४५ शेतकरी बांधवांना भातशेती लावणी करता लागणारे प्लास्टिक कागद (खोळ) वाटप करण्यात आले.',
+    },
+    image: '/images/media/pudhari-parli-shetkari-khol.jpeg',
+  },
+  {
+    id: 'muktagiri-alavadi-venekhol-sahitya',
+    title: {
+      en: 'Educational Supplies and School Bags Distributed at Aalavadi, Venekhol & Pateghar',
+      mr: 'संकल्प फाऊंडेशनतर्फे शैक्षणिक साहित्य वाटप — आलवडी, वेणेखोल व पाटेघर जि. प. शाळा',
+    },
+    newspaper: {
+      en: 'Dainik Muktagiri',
+      mr: 'दैनिक मुक्तागिरी',
+    },
+    date: {
+      en: 'Sep 13, 2025',
+      mr: '१२-१३ सप्टेंबर २०२५',
+    },
+    summary: {
+      en: 'Distribution of school backpacks, notebooks, and study essentials to rural students across Aalavadi, Venekhol, and Pateghar primary schools.',
+      mr: 'सातारा जिल्ह्यातील आलवडी, वेणेखोल व पाटेघर येथील जि. प. प्राथमिक शाळांमधील विद्यार्थ्यांना दप्तर व शैक्षणिक साहित्याचे वाटप.',
+    },
+    image: '/images/media/muktagiri-alavadi-venekhol-sahitya.jpeg',
+  },
+  {
+    id: 'aikya-alavadi-venekhol-sahitya',
+    title: {
+      en: 'School Kit Distribution Across Zilla Parishad Primary Schools by Sankalp Foundation',
+      mr: 'संकल्प फाऊंडेशनतर्फे शैक्षणिक साहित्य वाटप — दैनिक ऐक्य वृत्तसेवा',
+    },
+    newspaper: {
+      en: 'Dainik Aikya (Satara)',
+      mr: 'दैनिक ऐक्य (सातारा)',
+    },
+    date: {
+      en: 'Sep 13, 2025',
+      mr: '१२-१३ सप्टेंबर २०२५',
+    },
+    summary: {
+      en: 'Coverage in prominent daily Aikya highlighting the enthusiasm of students and appreciation from school headmasters for Sankalp Foundation\'s outreach.',
+      mr: 'ग्रामीण भागातील विद्यार्थ्यांमध्ये शिक्षणाबद्दल आत्मविश्वास वाढावा या हेतूने राबवलेल्या उपक्रमाचे शिक्षकांकडून व पालकांकडून विशेष कौतुक.',
+    },
+    image: '/images/media/aikya-alavadi-venekhol-sahitya.jpeg',
+  },
+  {
     id: 'muktagiri-umbarkhadwa',
     title: {
       en: 'Inspiring Initiative by Sankalp Foundation for Students\' Bright Future at Umbarkhadwa',
