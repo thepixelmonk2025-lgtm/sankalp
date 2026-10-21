@@ -45,8 +45,8 @@ const MentorSection = () => {
               <div className="relative z-10 flex flex-col items-center lg:items-start w-full">
                 <div className="relative mx-auto lg:mx-0 w-44 sm:w-56 aspect-[3/4] rounded-2xl overflow-hidden shadow-2xl border-4 border-[#D4A017]/40 mb-5 sm:mb-6 bg-black/20 group">
                   <img
-                    src="/images/team/ajit-jadhav.jpg"
-                    alt="आदरणीय श्री. अजितदादा जाधव"
+                    src="/images/team/ajit-dada-jadhav.png"
+                    alt="आदरणीय श्री. अजित दादा जाधव"
                     className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
                     loading="lazy"
                   />
@@ -60,7 +60,7 @@ const MentorSection = () => {
 
                 <div className="text-center lg:text-left w-full">
                   <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-white mb-1.5">
-                    {lang === 'en' ? 'Respected Shri Ajitdada Jadhav' : 'आदरणीय श्री. अजितदादा जाधव'}
+                    {lang === 'en' ? 'Respected Shri Ajit Dada Jadhav' : 'आदरणीय श्री. अजित दादा जाधव'}
                   </h3>
                   <p className="text-[#D4A017] font-semibold text-sm sm:text-base lg:text-lg mb-3 sm:mb-4">
                     {lang === 'en' 
