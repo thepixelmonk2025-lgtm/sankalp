@@ -37,7 +37,7 @@ export const teamMembers: TeamMember[] = [
       en: '“Service with dedication, transforming society through compassion.” Graduate and dedicated social worker actively contributing to environmental conservation and tribal school empowerment across Dhule, Nandurbar, Thane, and Palghar districts.',
       mr: '“Service with dedication, transforming society through compassion.” पदवीधर आणि सेवाभावी वृत्तीच्या कार्यकर्त्या. धुळे, नंदुरबार, ठाणे व पालघर जिल्ह्यातील आदिवासी शाळांमधील विद्यार्थ्यांचे सक्षमीकरण व पर्यावरण संवर्धनात सतत कार्यरत.',
     },
-    photo: '/images/team/sonali-ahire.jpg',
+    photo: '/images/team/sonali-ahire.png',
   },
   {
     id: 'sagar-kadam',
@@ -47,7 +47,7 @@ export const teamMembers: TeamMember[] = [
       en: 'Graduate entrepreneur in the hotel and tourism industry, serving as the Konkan Division Head with a deep commitment to community welfare.',
       mr: 'हॉटेल व पर्यटन व्यवसायात कार्यरत असलेले पदवीधर युवा उद्योजक, जे कोकण विभाग प्रमुख म्हणून सामाजिक बांधिलकी जपत तळमळीने कार्य करत आहेत.',
     },
-    photo: '/images/team/sagar-kadam.jpg',
+    photo: '/images/team/sagar-kadam.png',
   },
   {
     id: 'sumit-jambhale',
@@ -77,7 +77,7 @@ export const teamMembers: TeamMember[] = [
       en: 'M.Com graduate professionally working with Infosys. Passionate about reading, knowledge sharing, education welfare, and community empowerment.',
       mr: 'एम.कॉम पदवीधर आणि इन्फोसिस (Infosys) मध्ये कार्यरत. वाचनाची आवड आणि ज्ञानाच्या माध्यमातून समाजाच्या सर्वांगीण विकासासाठी कार्यरत असणारे सुशिक्षित सदस्य.',
     },
-    photo: '/images/team/kiran-jambhale.jpg',
+    photo: '/images/team/kiran-jambhale.png',
   },
   {
     id: 'shivaji-jambhale',
@@ -87,7 +87,7 @@ export const teamMembers: TeamMember[] = [
       en: 'Brings 15 years of automobile sector experience alongside agriculture, actively participating in social welfare across Mumbai and Satara.',
       mr: 'शेती व्यवसायासोबत ऑटोमोबाईल क्षेत्रात १५ वर्षांचा अनुभव. मुंबई व सातारा परिसरातील सामाजिक उपक्रमांत निरंतर सहभाग घेणारे कर्तव्यदक्ष सदस्य.',
     },
-    photo: '/images/team/shivaji-jambhale.jpg',
+    photo: '/images/team/shivaji-jambhale.png',
   },
   {
     id: 'harshada-surve',
