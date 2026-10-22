@@ -112,10 +112,10 @@ export const teamMembers: TeamMember[] = [
   {
     id: 'prajwal-shinde',
     name: { en: 'Prajwal Shinde', mr: 'प्रज्वल शिंदे' },
-    role: { en: 'Social Media & Marketing Head', mr: 'सोशल मीडिया आणि मार्केटिंग हेड' },
+    role: { en: 'Social Media & Marketing Head', mr: 'सोशल मीडिया व मार्केटिंग प्रमुख' },
     bio: {
-      en: '“Connecting society through social media.” Prajwal Shinde serves as the Social Media & Marketing Head at Sankalp Foundation. She holds a B.CA degree from SNDT University and has demonstrated strong expertise in digital platforms, brand promotion, and effective online communication. Actively participating in the foundation’s social initiatives, Prajwal manages social media, digital marketing, and public outreach to enhance the visibility and impact of Sankalp Foundation’s programs.',
-      mr: '“सोशल माध्यमांद्वारे समाजाशी जोडले जावे.” प्रज्वल शिंदे संकल्प फाऊंडेशनमध्ये Social Media आणि Marketing Head म्हणून कार्यरत आहेत. त्यांनी SNDT University मधून B.CA पदवी पूर्ण केली असून, डिजिटल प्लॅटफॉर्मवर प्रभावी संवाद साधण्यात आणि ब्रँड प्रमोशनमध्ये प्रावीण्य आहे. संकल्प फाऊंडेशनच्या सामाजिक उपक्रमांत सक्रिय सहभाग असून, त्या सोशल मीडिया, डिजिटल मार्केटिंग आणि जनसंपर्काद्वारे संस्थेच्या उपक्रमांचा प्रभाव आणि पोहोच वाढवतात.',
+      en: '“Connecting society through the power of social media!” Ms. Prajwal Shinde holds a Master of Computer Applications (M.C.A.) from the University of Mumbai, with specialized expertise in digital platforms, marketing, brand promotion, and impactful online communication. Actively participating in Sankalp Foundation’s social initiatives, she oversees social media management, digital marketing, and public relations. Her dedication ensures the foundation’s community work reaches a wider audience, inspiring citizens to join the movement for social change.',
+      mr: '“सोशल मीडियाच्या माध्यमातून समाजाला जोडण्याचा ध्यास!” सुश्री प्राज्वल शिंदे यांनी मुंबई विद्यापीठातून M.C.A. (Master of Computer Applications) ही पदव्युत्तर पदवी प्राप्त केली आहे. डिजिटल प्लॅटफॉर्म, डिजिटल मार्केटिंग, ब्रँड प्रमोशन आणि प्रभावी ऑनलाइन संवाद या क्षेत्रांत त्यांना उत्तम कौशल्य आहे. संकल्प फाऊंडेशनच्या सामाजिक उपक्रमांमध्ये सक्रिय सहभाग घेत त्या सोशल मीडिया व्यवस्थापन, डिजिटल मार्केटिंग आणि जनसंपर्काची जबाबदारी सांभाळतात. त्यांच्या योगदानामुळे फाऊंडेशनचे सामाजिक कार्य अधिकाधिक लोकांपर्यंत पोहोचविण्यास आणि समाजातील नागरिकांना सामाजिक परिवर्तनाच्या चळवळीशी जोडण्यास मदत होत आहे.',
     },
     photo: '/images/team/prajwal-shinde.webp',
   }
