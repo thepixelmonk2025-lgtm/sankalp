@@ -15,17 +15,17 @@ const campaigns = [
   {
     id: 'vidyarthi-dattak-yojana',
     titleEn: 'Student Adoption Scheme (Vidyarthi Dattak Yojana)',
-    titleMr: 'संकल्प विद्यार्थी दत्तक योजना (परळी विभाग)',
+    titleMr: 'संकल्प विद्यार्थी दत्तक योजना',
     descEn: 'Adopting and supporting orphaned, single-parent, and economically disadvantaged tribal children to provide uninterrupted formal education and life mentorship.',
-    descMr: 'परळी विभागातील अनाथ, एकल पालक व अत्यंत गरजू आदिवासी विद्यार्थ्यांना शिक्षणासाठी दत्तक घेऊन त्यांच्या उज्ज्वल भविष्यासाठी सर्वसमावेशक मदत.',
+    descMr: 'अनाथ, एकल पालक व अत्यंत गरजू आदिवासी विद्यार्थ्यांना शिक्षणासाठी दत्तक घेऊन त्यांच्या उज्ज्वल भविष्यासाठी सर्वसमावेशक मदत.',
     image: '/images/campaigns/vidyarthi-dattak-yojana.jpeg',
   },
   {
     id: 'annachhatra',
     titleEn: 'Annachhatra Food Support Campaign',
     titleMr: 'अन्नछत्र कार्यक्रम (अन्नदान म्हणजे जीवनदान)',
-    descEn: 'Providing daily meal support and nutritional sustenance to needy individuals and the elderly at Sai Tapovan Ashram, Asole, Murbad.',
-    descMr: 'साई तपोवन आश्रम, असोळे, मुरबाड येथे गरजू, वृद्ध व निराधार व्यक्तींसाठी दैनिक भोजन सेवा आणि अन्नदान उपक्रम.',
+    descEn: 'Providing daily nutritious meals and food sustenance to underprivileged individuals, the elderly, and destitute families.',
+    descMr: 'गरजू, वृद्ध, निराधार आणि वंचित बांधवांसाठी नियमित भोजन सेवा आणि अन्नदान उपक्रम.',
     image: '/images/campaigns/annachhatra-food-support.png',
   },
   {
