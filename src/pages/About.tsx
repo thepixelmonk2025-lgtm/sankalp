@@ -37,9 +37,6 @@ const About: React.FC = () => {
           </div>
         </div>
 
-        {/* Respected Mentors / Advisors Marquee right on top */}
-        <AdvisorsMarquee />
-
         {/* Story, Mission & Vision Cards */}
         <section className="py-10 sm:py-16 md:py-24 bg-white" aria-label="Our story and mission">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -155,6 +152,9 @@ const About: React.FC = () => {
             </div>
           </div>
         </section>
+
+        {/* Respected Mentors / Advisors Marquee moved to bottom */}
+        <AdvisorsMarquee />
 
         {/* Registration Details */}
         <section className="py-10 sm:py-16 bg-white" aria-label="Registration details">
